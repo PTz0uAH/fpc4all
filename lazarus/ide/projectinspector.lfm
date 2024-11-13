@@ -1,0 +1,187 @@
+object ProjectInspectorForm: TProjectInspectorForm
+  Left = 564
+  Height = 485
+  Top = 166
+  Width = 463
+  ActiveControl = ItemsTreeView
+  AllowDropFiles = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'ProjectInspectorForm'
+  ClientHeight = 485
+  ClientWidth = 463
+  LCLVersion = '3.99.0.0'
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnDestroy = FormDestroy
+  OnDropFiles = FormDropFiles
+  object ItemsTreeView: TTreeView
+    Left = 0
+    Height = 261
+    Top = 78
+    Width = 463
+    Align = alClient
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Top = 2
+    DragMode = dmAutomatic
+    MultiSelect = True
+    MultiSelectStyle = [msControlSelect, msShiftSelect, msSiblingOnly]
+    PopupMenu = ItemsPopupMenu
+    ReadOnly = True
+    RightClickSelect = True
+    TabOrder = 0
+    Options = [tvoAllowMultiselect, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoRightClickSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    OnAdvancedCustomDrawItem = ItemsTreeViewAdvancedCustomDrawItem
+    OnDblClick = ItemsTreeViewDblClick
+    OnDragDrop = ItemsTreeViewDragDrop
+    OnDragOver = ItemsTreeViewDragOver
+    OnKeyDown = ItemsTreeViewKeyDown
+  end
+  object FilterPanel: TPanel
+    Left = 0
+    Height = 28
+    Top = 48
+    Width = 463
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 28
+    ClientWidth = 463
+    TabOrder = 1
+    object OpenButton: TSpeedButton
+      AnchorSideLeft.Control = FilterPanel
+      AnchorSideTop.Control = FilterPanel
+      AnchorSideTop.Side = asrCenter
+      Left = 2
+      Height = 25
+      Top = 2
+      Width = 25
+      Align = alLeft
+      AllowAllUp = True
+      AutoSize = True
+      BorderSpacing.Around = 2
+      Constraints.MinHeight = 25
+      Constraints.MinWidth = 25
+      ShowHint = True
+      ParentShowHint = False
+      OnClick = OpenButtonClick
+    end
+    object DirectoryHierarchyButton: TSpeedButton
+      AnchorSideLeft.Control = OpenButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = OpenButton
+      AnchorSideTop.Side = asrCenter
+      Left = 40
+      Height = 25
+      Top = 2
+      Width = 25
+      AllowAllUp = True
+      AutoSize = True
+      BorderSpacing.Left = 11
+      BorderSpacing.Around = 2
+      Constraints.MinHeight = 25
+      Constraints.MinWidth = 25
+      GroupIndex = 1
+      ShowHint = True
+      ParentShowHint = False
+      OnClick = DirectoryHierarchyButtonClick
+    end
+    object SortAlphabeticallyButton: TSpeedButton
+      AnchorSideLeft.Control = DirectoryHierarchyButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = OpenButton
+      AnchorSideTop.Side = asrCenter
+      Left = 67
+      Height = 25
+      Top = 2
+      Width = 25
+      AllowAllUp = True
+      AutoSize = True
+      BorderSpacing.Around = 2
+      Constraints.MinHeight = 25
+      Constraints.MinWidth = 25
+      GroupIndex = 2
+      ShowHint = True
+      ParentShowHint = False
+      OnClick = SortAlphabeticallyButtonClick
+    end
+    object FilterEdit: TTreeFilterEdit
+      AnchorSideLeft.Control = ShowPropsPanelButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = SortAlphabeticallyButton
+      AnchorSideTop.Side = asrCenter
+      Left = 122
+      Height = 23
+      Top = 3
+      Width = 338
+      OnAfterFilter = FilterEditAfterFilter
+      ButtonWidth = 23
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 3
+      NumGlyphs = 1
+      MaxLength = 0
+      ParentFont = False
+      TabOrder = 0
+      OnKeyDown = FilterEditKeyDown
+      FilteredTreeview = ItemsTreeView
+    end
+    object ShowPropsPanelButton: TSpeedButton
+      AnchorSideLeft.Control = SortAlphabeticallyButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = OpenButton
+      AnchorSideTop.Side = asrCenter
+      Left = 94
+      Height = 25
+      Top = 2
+      Width = 25
+      AllowAllUp = True
+      AutoSize = True
+      BorderSpacing.Around = 2
+      Constraints.MinHeight = 25
+      Constraints.MinWidth = 25
+      GroupIndex = 2
+      ShowHint = True
+      ParentShowHint = False
+      OnClick = ShowPropsPanelButtonClick
+    end
+  end
+  object ToolBar: TToolBar
+    Left = 0
+    Height = 48
+    Top = 0
+    Width = 463
+    AutoSize = True
+    ButtonHeight = 46
+    ButtonWidth = 23
+    ShowCaptions = True
+    TabOrder = 2
+  end
+  object PropsGroupBox: TGroupBox
+    Left = 0
+    Height = 140
+    Top = 344
+    Width = 463
+    Align = alBottom
+    Caption = 'PropsGroupBox'
+    TabOrder = 3
+    OnResize = PropsGroupBoxResize
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 339
+    Width = 463
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object ItemsPopupMenu: TPopupMenu
+    OnPopup = ItemsPopupMenuPopup
+    Left = 72
+    Top = 112
+  end
+  object AddPopupMenu: TPopupMenu
+    OnPopup = AddPopupMenuPopup
+    Left = 74
+    Top = 163
+  end
+end

@@ -1,0 +1,138 @@
+object ShowCompilerOptionsDlg: TShowCompilerOptionsDlg
+  Left = 341
+  Height = 472
+  Top = 318
+  Width = 726
+  Caption = 'Compiler Options'
+  ClientHeight = 472
+  ClientWidth = 726
+  Constraints.MinHeight = 218
+  Constraints.MinWidth = 439
+  DesignTimePPI = 108
+  Position = poOwnerFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object CloseButton: TBitBtn
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 635
+    Height = 38
+    Top = 427
+    Width = 84
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Around = 7
+    Cancel = True
+    Caption = '&Close'
+    Constraints.MinHeight = 25
+    Constraints.MinWidth = 84
+    Default = True
+    Kind = bkClose
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    AnchorSideBottom.Control = CloseButton
+    Left = 7
+    Height = 413
+    Top = 7
+    Width = 712
+    ActivePage = CmdLineParamsTabSheet
+    Align = alTop
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 7
+    TabIndex = 0
+    TabOrder = 0
+    object CmdLineParamsTabSheet: TTabSheet
+      Caption = 'CmdLineParams'
+      ClientHeight = 381
+      ClientWidth = 702
+      object CmdLineMemo: TMemo
+        AnchorSideBottom.Control = RelativePathsCheckBox
+        Left = 7
+        Height = 344
+        Top = 7
+        Width = 688
+        Align = alTop
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Around = 7
+        Lines.Strings = (
+          'CmdLineMemo'
+        )
+        ReadOnly = True
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+      object RelativePathsCheckBox: TCheckBox
+        AnchorSideTop.Side = asrCenter
+        AnchorSideBottom.Control = CmdLineParamsTabSheet
+        AnchorSideBottom.Side = asrBottom
+        Left = 7
+        Height = 23
+        Top = 358
+        Width = 182
+        Anchors = [akLeft, akBottom]
+        Caption = 'RelativePathsCheckBox'
+        Checked = True
+        State = cbChecked
+        TabOrder = 1
+        OnChange = RelativePathsCheckBoxChange
+      end
+      object MultilineCheckBox: TCheckBox
+        AnchorSideLeft.Control = RelativePathsCheckBox
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = RelativePathsCheckBox
+        AnchorSideBottom.Side = asrBottom
+        Left = 206
+        Height = 23
+        Top = 358
+        Width = 151
+        BorderSpacing.Left = 17
+        Caption = 'MultilineCheckBox'
+        Checked = True
+        State = cbChecked
+        TabOrder = 2
+        OnChange = MultilineCheckBoxChange
+      end
+    end
+    object InheritedParamsTabSheet: TTabSheet
+      Caption = 'InheritedParams'
+      ClientHeight = 381
+      ClientWidth = 702
+      object InhTreeView: TTreeView
+        Left = 0
+        Height = 306
+        Top = 0
+        Width = 702
+        Align = alClient
+        ReadOnly = True
+        RightClickSelect = True
+        TabOrder = 0
+        Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoRightClickSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+        OnSelectionChanged = InhTreeViewSelectionChanged
+      end
+      object InhItemMemo: TMemo
+        Left = 0
+        Height = 69
+        Top = 312
+        Width = 702
+        Align = alBottom
+        ReadOnly = True
+        ScrollBars = ssAutoVertical
+        TabOrder = 1
+      end
+      object InhSplitter: TSplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 6
+        Top = 306
+        Width = 702
+        Align = alBottom
+        ResizeAnchor = akBottom
+      end
+    end
+  end
+end

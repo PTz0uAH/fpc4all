@@ -1,0 +1,18 @@
+object IdeDbgValFormatOptionsFrame: TIdeDbgValFormatOptionsFrame
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 346
+  ClientHeight = 240
+  ClientWidth = 346
+  TabOrder = 0
+  DesignLeft = 470
+  DesignTop = 214
+  inline IdeDbgVarFormatterFrame1: TIdeDbgVarFormatterFrame
+    Height = 240
+    Width = 346
+    Align = alClient
+    ClientHeight = 240
+    ClientWidth = 346
+  end
+end

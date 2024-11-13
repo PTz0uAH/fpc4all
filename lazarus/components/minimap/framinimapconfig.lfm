@@ -1,0 +1,182 @@
+object MiniMapConfigFrame: TMiniMapConfigFrame
+  Left = 0
+  Height = 303
+  Top = 0
+  Width = 600
+  ClientHeight = 303
+  ClientWidth = 600
+  TabOrder = 0
+  DesignLeft = 652
+  DesignTop = 343
+  object cbEnabled: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 6
+    Height = 23
+    Top = 6
+    Width = 112
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    Caption = 'Show minimap'
+    TabOrder = 0
+  end
+  object lblMapWidth: TLabel
+    AnchorSideLeft.Control = cbEnabled
+    AnchorSideTop.Control = seWidth
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrBottom
+    Left = 6
+    Height = 16
+    Top = 72
+    Width = 60
+    Alignment = taRightJustify
+    Caption = 'Map width'
+    FocusControl = seWidth
+    Layout = tlCenter
+  end
+  object seWidth: TSpinEditEx
+    AnchorSideLeft.Control = lblMapWidth
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = cbAlignLeft
+    AnchorSideTop.Side = asrBottom
+    Left = 72
+    Height = 33
+    Top = 64
+    Width = 80
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    MaxLength = 0
+    SpinButtonWidth = 17
+    TabOrder = 1
+    MaxValue = 500
+    MinValue = 100
+    NullValue = 0
+    Value = 100
+  end
+  object seInitialFontSize: TSpinEditEx
+    AnchorSideLeft.Control = lblInitialFontSize
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = seWidth
+    AnchorSideTop.Side = asrBottom
+    Left = 97
+    Height = 33
+    Top = 103
+    Width = 80
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    MaxLength = 0
+    SpinButtonWidth = 17
+    TabOrder = 2
+    MaxValue = 24
+    MinValue = 1
+    NullValue = 0
+    Value = 1
+  end
+  object lblInitialFontSize: TLabel
+    AnchorSideLeft.Control = cbEnabled
+    AnchorSideTop.Control = seInitialFontSize
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrBottom
+    Left = 6
+    Height = 16
+    Top = 111
+    Width = 85
+    Alignment = taRightJustify
+    Caption = 'Initial font size'
+    FocusControl = seInitialFontSize
+    Layout = tlCenter
+  end
+  object cbViewWindow: TColorBox
+    AnchorSideLeft.Control = lblViewWindowColor
+    AnchorSideTop.Control = lblViewWindowColor
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 28
+    Top = 158
+    Width = 235
+    Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeNone, cbCustomColor]
+    ColorDialog = CDView
+    ItemHeight = 0
+    TabOrder = 3
+  end
+  object lblViewWindowColor: TLabel
+    AnchorSideLeft.Control = cbEnabled
+    AnchorSideTop.Control = seInitialFontSize
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 6
+    Height = 16
+    Top = 142
+    Width = 109
+    Alignment = taRightJustify
+    BorderSpacing.Top = 6
+    Caption = 'View window color'
+    Layout = tlCenter
+  end
+  object lblViewWindowTextColor: TLabel
+    AnchorSideLeft.Control = cbViewWindow
+    AnchorSideTop.Control = cbViewWindow
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 6
+    Height = 16
+    Top = 192
+    Width = 87
+    Alignment = taRightJustify
+    BorderSpacing.Top = 6
+    Caption = 'View text color'
+    Layout = tlCenter
+  end
+  object cbViewText: TColorBox
+    AnchorSideLeft.Control = lblViewWindowTextColor
+    AnchorSideTop.Control = lblViewWindowTextColor
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 28
+    Top = 208
+    Width = 235
+    Style = [cbStandardColors, cbSystemColors, cbIncludeNone, cbCustomColor]
+    ColorDialog = CDView
+    ItemHeight = 0
+    TabOrder = 4
+  end
+  object cbAlignLeft: TCheckBox
+    AnchorSideLeft.Control = cbEnabled
+    AnchorSideTop.Control = cbEnabled
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 23
+    Top = 35
+    Width = 371
+    BorderSpacing.Top = 6
+    Caption = 'Put map left of editor (requires IDE restart for existing tabs)'
+    TabOrder = 5
+  end
+  object CDView: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 288
+    Top = 96
+  end
+end

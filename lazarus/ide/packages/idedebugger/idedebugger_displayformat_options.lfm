@@ -1,0 +1,27 @@
+object IdeDbgDisplayFormatOptionsFrame: TIdeDbgDisplayFormatOptionsFrame
+  Left = 0
+  Height = 433
+  Top = 0
+  Width = 587
+  ClientHeight = 433
+  ClientWidth = 587
+  TabOrder = 0
+  DesignLeft = 469
+  DesignTop = 112
+  inline DisplayFormatDefaultsConfigFrame1: TDisplayFormatDefaultsConfigFrame
+    Height = 433
+    Width = 587
+    Align = alClient
+    ClientHeight = 433
+    ClientWidth = 587
+    inherited DisplayFormatFrame1: TDisplayFormatFrame
+      Height = 368
+      Top = 65
+      Width = 587
+      Align = alClient
+      ClientHeight = 368
+      ClientWidth = 587
+      TabOrder = 1
+    end
+  end
+end

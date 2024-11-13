@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <LRSInOutputDirectory Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="ppcx64"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <CommandLineParams Value="-Tlinux -tunicodertl -FUrtl-objpas\units\x86_64-linux-unicodertl\ -Fu\home\tixeo\FPC\FPC\src\rtl\units\x86_64-linux-unicodertl\ -Furtl-objpas\src\inc -Furtl-objpas\src\common -Firtl-objpas\src\inc -Firtl-objpas\src\linux -Firtl-objpas\src\x86_64 -Firtl-objpas\src\common -Fl\usr\lib\gcc\x86_64-linux-gnu\11 -tunicodertl -Cg -Fl\usr\lib\gcc\x86_64-linux-gnu\11 -gl -dx86_64 -Sc -viq rtl-objpas\BuildUnit_rtl_objpas.pp"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+        <WorkingDirectory Value="\home\tixeo\fpc\packages"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="pp.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="x86\aasmcpu.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="x86_64\pp"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="x86_64"/>
+      <OtherUnitFiles Value="x86_64;x86;systems"/>
+      <UnitOutputDirectory Value="x86_64\lazbuild"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Other>
+      <Verbosity>
+        <ShowWarn Value="False"/>
+        <ShowNotes Value="False"/>
+        <ShowHints Value="False"/>
+      </Verbosity>
+      <ConfigFile>
+        <StopAfterErrCount Value="50"/>
+      </ConfigFile>
+      <CustomOptions Value="-dx86_64"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

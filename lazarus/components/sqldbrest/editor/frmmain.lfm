@@ -1,0 +1,301 @@
+object MainForm: TMainForm
+  Left = 487
+  Height = 360
+  Top = 298
+  Width = 755
+  ActiveControl = fraEditor.fraConn.TVConnections
+  Caption = 'REST Schema designer'
+  ClientHeight = 360
+  ClientWidth = 755
+  Menu = MMain
+  Position = poDesktopCenter
+  SessionProperties = 'Height;Left;Top;Width;MRUSchema.Recent'
+  LCLVersion = '3.99.0.0'
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inline fraEditor: TSchemaEditorFrame
+    Height = 360
+    Width = 755
+    Align = alClient
+    ClientHeight = 360
+    ClientWidth = 755
+    DesignLeft = 546
+    DesignTop = 298
+    inherited fraConn: TfraConnections
+      Height = 360
+      Width = 203
+      Align = alLeft
+      ClientHeight = 360
+      ClientWidth = 203
+      inherited TVConnections: TTreeView
+        Height = 304
+        Top = 56
+        Width = 203
+      end
+      inherited ToolBar1: TToolBar
+        Width = 203
+        inherited TBSep1: TToolButton
+          Height = 30
+        end
+        inherited ToolButton1: TToolButton
+          Height = 30
+        end
+      end
+      inherited Label1: TLabel
+        Height = 16
+        Width = 203
+      end
+    end
+    inherited splConnection: TSplitter
+      Height = 360
+    end
+    inherited fraSchema: TSQLDBRestSchemaEditorFrame
+      Left = 208
+      Height = 360
+      Width = 547
+      Align = alClient
+      ClientHeight = 360
+      ClientWidth = 547
+      TabOrder = 2
+      inherited PResources: TPanel
+        Height = 328
+        Width = 170
+        ClientHeight = 328
+        ClientWidth = 170
+        inherited TVResources: TTreeView
+          Height = 304
+          Width = 170
+        end
+        inherited LResources: TLabel
+          Width = 170
+        end
+      end
+      inherited Splitter1: TSplitter
+        Left = 170
+        Height = 328
+      end
+      inherited PDock: TPanel
+        Left = 175
+        Height = 328
+        Width = 372
+      end
+      inherited Panel1: TPanel
+        Width = 547
+        ClientWidth = 547
+        inherited Panel2: TPanel
+          inherited TBResources: TToolBar
+            inherited ToolButton1: TToolButton
+              Height = 30
+            end
+            inherited ToolButton2: TToolButton
+              Height = 30
+            end
+            inherited ToolButton9: TToolButton
+              Height = 30
+            end
+          end
+        end
+        inherited lblSelect: TLabel
+          Width = 212
+        end
+      end
+    end
+  end
+  object alMain: TActionList
+    Images = ILMain
+    Left = 10
+    Top = 10
+    object AFileReadConnections: TAction
+      Category = 'Connections'
+      Caption = 'Read connections'
+      ImageIndex = 2
+      OnExecute = AFileReadConnectionsExecute
+    end
+    object AFileWriteConnections: TAction
+      Category = 'Connections'
+      Caption = 'Write Connections'
+      ImageIndex = 3
+      OnExecute = AFileWriteConnectionsExecute
+    end
+    object ALoadSchema: TAction
+      Category = 'Schema'
+      Caption = 'Load schema'
+      ImageIndex = 1
+      ShortCut = 16463
+      OnExecute = ALoadSchemaExecute
+    end
+    object ASaveSchema: TAction
+      Category = 'Schema'
+      Caption = 'Save schema'
+      ImageIndex = 0
+      ShortCut = 16467
+      OnExecute = ASaveSchemaExecute
+    end
+    object ASaveSchemaAs: TAction
+      Category = 'Schema'
+      Caption = 'Save schema as'
+      ImageIndex = 4
+      OnExecute = ASaveSchemaAsExecute
+    end
+    object ASchemaNew: TAction
+      Category = 'Schema'
+      Caption = 'New schema'
+      ImageIndex = 5
+      ShortCut = 16462
+      OnExecute = ASchemaNewExecute
+    end
+    object aQuit: TAction
+      Category = 'File'
+      Caption = 'Quit'
+      ImageIndex = 6
+      ShortCut = 16465
+      OnExecute = aQuitExecute
+    end
+    object AShowSettings: TAction
+      Caption = 'Settings...'
+      ImageIndex = 7
+      OnExecute = AShowSettingsExecute
+    end
+  end
+  object MMain: TMainMenu
+    Images = ILMain
+    Left = 39
+    Top = 10
+    object MFile: TMenuItem
+      Caption = 'File'
+      object MIReadConnections: TMenuItem
+        Action = AFileReadConnections
+      end
+      object MWriteConnections: TMenuItem
+        Action = AFileWriteConnections
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MISchemaNew: TMenuItem
+        Action = ASchemaNew
+      end
+      object MISchemaLoad: TMenuItem
+        Action = ALoadSchema
+      end
+      object MISchemaSave: TMenuItem
+        Action = ASaveSchema
+      end
+      object MISaveSchemaAs: TMenuItem
+        Action = ASaveSchemaAs
+      end
+      object MIRecent: TMenuItem
+        Caption = 'Recent schemas'
+      end
+      object MIShowSettings: TMenuItem
+        Action = AShowSettings
+      end
+      object MISep2: TMenuItem
+        Caption = '-'
+      end
+      object MIQuit: TMenuItem
+        Action = aQuit
+      end
+    end
+  end
+  object odConnection: TOpenDialog
+    Title = 'Read existing connections file'
+    DefaultExt = '.ini'
+    Filter = 'INI Files|*.ini|JSON files|*.json'
+    Options = [ofFileMustExist, ofEnableSizing]
+    Left = 120
+    Top = 352
+  end
+  object sdConnection: TSaveDialog
+    Title = 'Save connection definitions as'
+    DefaultExt = '.ini'
+    Filter = 'INI Files|*.ini|JSON files|*.json'
+    Options = [ofOverwritePrompt, ofPathMustExist, ofEnableSizing]
+    Left = 120
+    Top = 296
+  end
+  object IPSMain: TIniPropStorage
+    StoredValues = <>
+    Active = False
+    OnSaveProperties = IPSMainSaveProperties
+    OnRestoreProperties = IPSMainRestoreProperties
+    Left = 432
+    Top = 139
+  end
+  object ILMain: TImageList
+    Height = 24
+    Width = 24
+    Left = 423
+    Top = 63
+    Bitmap = {
+      4C7A080000001800000018000000810500000000000078DAED5B4B6F1C451036
+      2F25E111C10102E10D460842AC78BB7B1713103EF3907828A7288938F00B200F
+      A200E680304202E5B1DB33B6C0240284029C382261122E1CE0805062EFCCAC97
+      C824902005BC20A17059AAE6B13BB33B339E9EED5EDBB85B6A79A65DFD554F75
+      75757575EDC0802E598B6DD066BE4AF6AAC587CAE95856FCFCDF9BFE1DBDE3A7
+      7F8714FC94FEFDC2EFB56A7CE9F89750B7E78E0CDF89D536C93E68FB571E7EF7
+      BAB10DF68A2CFC7A99DDDC497BDA24B7A8C49F3D3CBC71A5C827985FFB83E11B
+      DD2A7D7E5786FEEBA27D14519F2427FE4C5E1E99F0710D1BF4A7AC7E8F283ED2
+      397CE82618FF29511E22EB736EB2B4C136E969111EA2EBDF9E2CDD066D8EA88F
+      28625FC09EDE0BEDF3596C8F6ADBB6CAF0E7417FF6D726183B53D97C035689F8
+      9FD9874AEBD5D807F251736CE072A4B70CF61CB49D80FDFEA257E90987179FCD
+      8BEF18F4DCA9F2A66B3DBDA4AF27D3B2D7728D1FE4ED8EDB244F2E465B33E813
+      A2F835936C76E938FDA663BCE35E8DD04F8BE29F33C9D53EDD5F71672E7C0ED1
+      3744F1EB53A36BA3F86C3CC6B71BCF8B3F57290CC5CB27B64EF77B7E85D64A0E
+      FD142DEDF545FFF16BEAFA5A8D05ED26CCC53159B6B343D79F469B24D3F687FB
+      00F64EDF6E66C6178D7778673DF2A52A7C59F11655E72FD9F8B2DE970A7F59C9
+      DFA49F7F6F92ABC23412E5F3E9F4D8E8959D18B2F09BC7B75DE1B5B7CF4952E4
+      139249B09FB7EC45A5407AC1770C32D51A77C85790B5BEC33289F3EDE0EFD78E
+      4976359B0397A5E01C8DF385A3F85DBE54A45A9C7D98C4C3F7992EC0B9675B67
+      3B8CF18B96EC433C82989CC3D98BE8F7B83C0CF642F23C804DE77447ECFCC05E
+      15F8CF018FEE3DC1A5FD2E1E9F1DC73374F67989FA70F5A92DD7FBF87FAA8E63
+      AC547CEDFF68FF47FB3FDAFF512CFF79D80B5FC29801AE61D453787E54967C7E
+      3C36744D2F36358B7C2D4E9F770C76321CFFC1336B0FF2F915F727FFFDBDC4FD
+      DD20EFE4C1877E07827127D0375CDF007D01933C232ABF20BEE1C9C4F503CE07
+      FE02D40567823DE270FA90DF3E2DEAFFCCBF3BB2AE1D9F018C09B609F0B67AF1
+      DBE2886BEF268B77C3FB19E497E2FF9CB578E1A9CEF6802F3CFF8D1833FCE1BB
+      DCF743836BDC98B77BBF4A7F4E8AFF2CE6FF54392D86E503FE681D74FE0E6CC3
+      BFD0369716FFC9EAFFE0BE15C2715036AD38BAACF88F41DE501EFF69AD2F1DFF
+      E9DFDD9ACEFFC9FDBD3AFF47E7E72C45FE8F49F7E33D66AC0DADB07B30A69217
+      1F6CF09EC57409E31236671FE7CACFF1FD9D647A6FDD220F382F7D228A9F74AF
+      18671B82F88A907C4CBA3B29EE108DF5917D39EDA79BFF83794C553E722BC879
+      7B621C288587880E46E340D1589663D2B725E9FFD1561C88B3B7DABCD9C9E00E
+      5466413D065FF12B578606FD016CF59BB279CCBEBFF53ACBA0DF26DD1D4AD9C7
+      71AD0BE68DFCFF7C1485F93F2DFF5E51FE0FE6B498D45699FF239A37238AEF9E
+      61CAEC76511EC2F1318F474D65FE8F532E0CEAFC1F8DAFF135FE6AC7D745C77F
+      F4F97AF9E0C3398C07F17805F8475CFFA71D8F978DFF4790AF51334AF7813FFD
+      8B02F9FF1EE49C063C64C5BB62CF90E5C203CB0D7F31F958136C8BD7BFF420BC
+      FF260D9FD3B3B3157ABF27FB22C5F9963BBFA4AC583F55AF2F6DDFB48FA2CB0A
+      28D6C1C1353627A358F159367ED5200702FDAEFA77F0BD14DC57AB06DD5D9F7A
+      7CAD75B0B81EC6DDFE3D013C631BFE0F69D2722693B0C1F62EF836DE01BC46B7
+      ED270DF77F9E9D5E10E1816312B509D8272B3E7E777B6C99F63107FB64D71557
+      DE8D50FF4B16277B660E0F6FC46A61BC9C63CCBE2D2BEC9365DC96495E8DCCA5
+      97B3D11587B43AF34BA10FEA559AEE562B85C7E2BE1FC7DC493B93F0FB68C458
+      2A7C4F9F611D65918FF71B6921F9A4CE2FF0E8757EFBA59FAAD7976AFBE0DD71
+      9002F47F398B7D43DAE5669FFBBDBFACD6F21F5D4208CA
+    }
+  end
+  object SDSchema: TSaveDialog
+    Title = 'Save schema to file'
+    DefaultExt = '.srs'
+    Filter = 'SQLDB Rest Schema files|*.srs|All files|*.*'
+    Options = [ofOverwritePrompt, ofPathMustExist, ofEnableSizing]
+    Left = 43
+    Top = 293
+  end
+  object ODSchema: TOpenDialog
+    Title = 'Open existing schema file'
+    DefaultExt = '.srs'
+    Filter = 'SQLDB Rest Schema files|*.srs|All files|*.*'
+    Options = [ofFileMustExist, ofEnableSizing]
+    Left = 40
+    Top = 352
+  end
+  object MRUSchema: TMRUMenuManager
+    MenuItem = MIRecent
+    MenuCaptionMask = '%0:d.  %1:s'
+    OnRecentFile = MRUSchemaRecentFile
+    Left = 541
+    Top = 88
+  end
+end

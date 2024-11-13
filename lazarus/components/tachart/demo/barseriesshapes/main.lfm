@@ -1,0 +1,179 @@
+object Form1: TForm1
+  Left = 332
+  Height = 384
+  Top = 127
+  Width = 633
+  Caption = 'Form1'
+  ClientHeight = 384
+  ClientWidth = 633
+  LCLVersion = '3.99.0.0'
+  OnCreate = FormCreate
+  object Chart1: TChart
+    Left = 0
+    Height = 349
+    Top = 0
+    Width = 633
+    AxisList = <    
+      item
+        Grid.Color = clSilver
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Grid.Visible = False
+        Intervals.MaxLength = 150
+        Intervals.MinLength = 50
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    BackColor = clWhite
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+    object BarSeries: TBarSeries
+      Legend.Multiplicity = lmStyle
+      AxisIndexX = 1
+      AxisIndexY = 0
+      BarBrush.Color = clRed
+      Depth = 20
+      DepthBrightnessDelta = -32
+      Marks.LabelFont.Color = clWhite
+      Marks.Visible = False
+      Marks.LabelBrush.Color = clOlive
+      Marks.LinkPen.Color = clGray
+      Styles = ChartStyles1
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 35
+    Top = 349
+    Width = 633
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 35
+    ClientWidth = 633
+    TabOrder = 1
+    object lblShape: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = cmbShape
+      AnchorSideTop.Side = asrCenter
+      Left = 6
+      Height = 15
+      Top = 10
+      Width = 32
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 6
+      Caption = 'Shape'
+    end
+    object cmbShape: TComboBox
+      AnchorSideLeft.Control = lblShape
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 44
+      Height = 23
+      Top = 6
+      Width = 164
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 6
+      BorderSpacing.Bottom = 6
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'rectangular box'
+        'cylinder'
+        'hexagonal prism'
+        'pyramid'
+        'conical'
+      )
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'rectangular box'
+      OnChange = cmbShapeChange
+    end
+    object cb3D: TCheckBox
+      AnchorSideLeft.Control = cmbShape
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = cmbShape
+      AnchorSideTop.Side = asrCenter
+      Left = 220
+      Height = 19
+      Top = 8
+      Width = 32
+      BorderSpacing.Left = 12
+      Caption = '3D'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+      OnChange = cb3DChange
+    end
+    object cbRotated: TCheckBox
+      AnchorSideLeft.Control = cb3D
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = cmbShape
+      AnchorSideTop.Side = asrCenter
+      Left = 264
+      Height = 19
+      Top = 8
+      Width = 59
+      BorderSpacing.Left = 12
+      Caption = 'Rotated'
+      TabOrder = 2
+      OnChange = cbRotatedChange
+    end
+    object cbShowLabels: TCheckBox
+      AnchorSideLeft.Control = cbRotated
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 335
+      Height = 19
+      Top = 8
+      Width = 80
+      BorderSpacing.Left = 12
+      Caption = 'Show labels'
+      TabOrder = 3
+      OnChange = cbShowLabelsChange
+    end
+  end
+  object RandomChartSource1: TRandomChartSource
+    PointsNumber = 6
+    RandSeed = 1050736283
+    XMax = 5
+    YCount = 3
+    YMax = 100
+    Left = 136
+    Top = 81
+  end
+  object ChartStyles1: TChartStyles
+    Styles = <    
+      item
+        Brush.Color = clRed
+        Text = 'RED'
+        UseFont = False
+      end    
+      item
+        Brush.Color = clYellow
+        Text = 'YELLOW'
+        UseFont = False
+      end    
+      item
+        Brush.Color = clBlue
+        Text = 'BLUE'
+        UseFont = False
+      end>
+    Left = 232
+    Top = 79
+  end
+end

@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Maxim Ganetsky <maxkill@mail.ru>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: ideconfstrconsts.liscomponentnameisapascalkeyword
+#, object-pascal-format
+msgid "Component name \"%s\" is a Pascal keyword."
+msgstr "Имя компонента \"%s\" является ключевым словом Паскаля."
+
+#: ideconfstrconsts.liscomponentnameisnotavalididentifier
+#, object-pascal-format
+msgid "Component name \"%s\" is not a valid identifier"
+msgstr "Имя компонента \"%s\" не является корректным идентификатором"
+
+#: ideconfstrconsts.lisedtdefallpackages
+msgid "All packages"
+msgstr "Все пакеты"
+
+#: ideconfstrconsts.lisedtdefsallprojects
+msgid "All projects"
+msgstr "Все проекты"
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetodelphi
+msgid "set FPC mode to DELPHI"
+msgstr "установить режим FPC в DELPHI"
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetofpc
+msgid "set FPC mode to FPC"
+msgstr "установить режим FPC в FPC"
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetogpc
+msgid "set FPC mode to GPC"
+msgstr "установить режим FPC в GPC"
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetomacpas
+msgid "set FPC mode to MacPas"
+msgstr "установить режим FPC в MacPas"
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetotp
+msgid "set FPC mode to TP"
+msgstr "установить режим FPC в TP"
+
+#: ideconfstrconsts.lisedtdefsetiocheckson
+msgid "set IOCHECKS on"
+msgstr "Включить IOCHECKS"
+
+#: ideconfstrconsts.lisedtdefsetoverflowcheckson
+msgid "set OVERFLOWCHECKS on"
+msgstr "Включить OVERFLOWCHECKS"
+
+#: ideconfstrconsts.lisedtdefsetrangecheckson
+msgid "set RANGECHECKS on"
+msgstr "Включить RANGECHECKS"
+
+#: ideconfstrconsts.lisedtdefuseheaptrcunit
+msgid "use HeapTrc unit"
+msgstr "использовать модуль HeapTrc"
+
+#: ideconfstrconsts.lisedtdefuselineinfounit
+msgid "use LineInfo unit"
+msgstr "использовать модуль LineInfo"
+
+#: ideconfstrconsts.lisendlessloopinmacros
+msgid "Endless loop in macros"
+msgstr "Порочный круг макросов"
+
+#: ideconfstrconsts.lisfppkgcompilernotexecutable
+#, object-pascal-format
+msgid "The compiler [%s] configured for Fppkg is not an executable."
+msgstr "Компилятор [%s], назначенный для Fppkg, не является исполнимым файлом."
+
+#: ideconfstrconsts.lisfppkgcompilernotexists
+#, object-pascal-format
+msgid "The compiler [%s] configured for Fppkg does not exist."
+msgstr "Компилятор [%s], назначенный для Fppkg, отсутствует."
+
+#: ideconfstrconsts.lisfppkgcompilernotfound
+#, object-pascal-format
+msgid "Could not find the compiler [%s] configured for Fppkg."
+msgstr "Невозможно найти компилятор [%s], назначенный для Fppkg."
+
+#: ideconfstrconsts.lisfppkgrtlnotfound
+msgid "Fppkg reports that the RTL is not installed."
+msgstr "Fppkg сообщает, что RTL не установлена."
+
+#: ideconfstrconsts.listmfunctionappendpathdelimiter
+msgid "Function: append path delimiter"
+msgstr "Функция: добавление разделителя пути"
+
+#: ideconfstrconsts.listmfunctionchomppathdelimiter
+msgid "Function: remove trailing path delimiter"
+msgstr "Функция: удаление завершающего разделителя пути"
+
+#: ideconfstrconsts.listmfunctionenclosebrackets
+msgid "Function: enclose in ()"
+msgstr "Функция: заключение в скобки ()"
+
+#: ideconfstrconsts.listmfunctionextractfileextension
+msgid "Function: extract file extension"
+msgstr "Функция: извлечение расширения файла"
+
+#: ideconfstrconsts.listmfunctionextractfilenameextension
+msgid "Function: extract file name+extension"
+msgstr "Функция: извлечение имени файла с расширением"
+
+#: ideconfstrconsts.listmfunctionextractfilenameonly
+msgid "Function: extract file name only"
+msgstr "Функция: извлечение только имени файла"
+
+#: ideconfstrconsts.listmfunctionextractfilepath
+msgid "Function: extract file path"
+msgstr "Функция: извлечение пути к файлу"
+
+#: ideconfstrconsts.listmunknownmacro
+#, object-pascal-format
+msgid "(unknown macro: %s)"
+msgstr "(неизвестный макрос: %s)"
+

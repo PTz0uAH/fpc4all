@@ -1,0 +1,1042 @@
+object SynColorAttrEditor: TSynColorAttrEditor
+  Left = 0
+  Height = 197
+  Top = 0
+  Width = 1292
+  AutoSize = True
+  ClientHeight = 197
+  ClientWidth = 1292
+  Constraints.MinHeight = 140
+  TabOrder = 0
+  OnResize = pnlElementAttributesResize
+  DesignLeft = 628
+  DesignTop = 221
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 131
+    Top = 0
+    Width = 916
+    AutoSize = True
+    BevelOuter = bvNone
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 3
+    ChildSizing.HorizontalSpacing = 3
+    ChildSizing.VerticalSpacing = 3
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 7
+    ClientHeight = 131
+    ClientWidth = 916
+    TabOrder = 3
+    object pnlForegroundName: TPanel
+      Left = 6
+      Height = 23
+      Top = 3
+      Width = 221
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 221
+      TabOrder = 0
+      object ForeGroundUseDefaultCheckBox: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 0
+        Width = 191
+        Caption = 'ForeGroundUseDefaultCheckBox'
+        TabOrder = 0
+        OnChange = GeneralCheckBoxOnChange
+      end
+      object ForeGroundLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 91
+        Caption = 'ForeGroundLabel'
+        ParentColor = False
+        Visible = False
+      end
+    end
+    object Panel2: TPanel
+      Left = 230
+      Height = 23
+      Top = 3
+      Width = 203
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 203
+      TabOrder = 4
+      object ForegroundColorBox: TColorBox
+        Left = 0
+        Height = 22
+        Top = 0
+        Width = 200
+        DefaultColorColor = clWhite
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+        OnGetColors = GeneralColorBoxOnGetColors
+        Constraints.MaxWidth = 200
+        Constraints.MinWidth = 80
+        ItemHeight = 16
+        TabOrder = 0
+        OnChange = GeneralColorBoxOnChange
+      end
+    end
+    object Panel3: TPanel
+      Left = 436
+      Height = 23
+      Top = 3
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 123
+      TabOrder = 5
+      object ForeAlphaLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 82
+        Caption = 'ForeAlphaLabel'
+        ParentColor = False
+      end
+    end
+    object Panel4: TPanel
+      Left = 562
+      Height = 23
+      Top = 3
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 6
+      object ForeAlphaSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 256
+        MinValue = 1
+        TabOrder = 0
+        Value = 256
+        OnChange = GeneralAlphaSpinOnChange
+        OnEditingDone = GeneralAlphaSpinOnChange
+        OnEnter = GeneralAlphaSpinOnEnter
+        OnExit = GeneralAlphaSpinOnChange
+        OnResize = GeneralAlphaSpinOnChange
+      end
+    end
+    object Panel5: TPanel
+      Left = 630
+      Height = 23
+      Top = 3
+      Width = 86
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 86
+      TabOrder = 7
+      object ForePriorLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 76
+        Caption = 'ForePriorLabel'
+        ParentColor = False
+      end
+    end
+    object Panel6: TPanel
+      Left = 719
+      Height = 23
+      Top = 3
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 8
+      object ForePriorSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 9999
+        TabOrder = 0
+        Value = 1
+        OnChange = GeneralPriorSpinOnChange
+        OnEditingDone = GeneralPriorSpinOnChange
+        OnExit = GeneralPriorSpinOnChange
+      end
+    end
+    object lbFiller1: TLabel
+      Left = 787
+      Height = 23
+      Top = 3
+      Width = 123
+    end
+    object pnlBackgroundName: TPanel
+      Left = 6
+      Height = 23
+      Top = 29
+      Width = 221
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 221
+      TabOrder = 1
+      object BackGroundUseDefaultCheckBox: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 0
+        Width = 193
+        Caption = 'BackGroundUseDefaultCheckBox'
+        TabOrder = 0
+        OnChange = GeneralCheckBoxOnChange
+      end
+      object BackGroundLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 93
+        Caption = 'BackGroundLabel'
+        ParentColor = False
+        Visible = False
+      end
+    end
+    object Panel7: TPanel
+      Left = 230
+      Height = 23
+      Top = 29
+      Width = 203
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 203
+      TabOrder = 9
+      object BackGroundColorBox: TColorBox
+        Left = 0
+        Height = 22
+        Top = 0
+        Width = 200
+        DefaultColorColor = clWhite
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+        OnGetColors = GeneralColorBoxOnGetColors
+        Constraints.MaxWidth = 200
+        Constraints.MinWidth = 80
+        ItemHeight = 16
+        TabOrder = 0
+        OnChange = GeneralColorBoxOnChange
+      end
+    end
+    object Panel8: TPanel
+      Left = 436
+      Height = 23
+      Top = 29
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 123
+      TabOrder = 10
+      object BackAlphaLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 84
+        Caption = 'BackAlphaLabel'
+        ParentColor = False
+      end
+    end
+    object Panel9: TPanel
+      Left = 562
+      Height = 23
+      Top = 29
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 11
+      object BackAlphaSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 256
+        MinValue = 1
+        TabOrder = 0
+        Value = 256
+        OnChange = GeneralAlphaSpinOnChange
+        OnEditingDone = GeneralAlphaSpinOnChange
+        OnEnter = GeneralAlphaSpinOnEnter
+        OnExit = GeneralAlphaSpinOnChange
+        OnResize = GeneralAlphaSpinOnChange
+      end
+    end
+    object Panel10: TPanel
+      Left = 630
+      Height = 23
+      Top = 29
+      Width = 86
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 86
+      TabOrder = 12
+      object BackPriorLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 78
+        Caption = 'BackPriorLabel'
+        ParentColor = False
+      end
+    end
+    object Panel11: TPanel
+      Left = 719
+      Height = 23
+      Top = 29
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 13
+      object BackPriorSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 9999
+        TabOrder = 0
+        Value = 1
+        OnChange = GeneralPriorSpinOnChange
+        OnEditingDone = GeneralPriorSpinOnChange
+        OnExit = GeneralPriorSpinOnChange
+      end
+    end
+    object lbFiller2: TLabel
+      Left = 787
+      Height = 23
+      Top = 29
+      Width = 123
+    end
+    object Panel12: TPanel
+      Left = 6
+      Height = 23
+      Top = 55
+      Width = 221
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 221
+      TabOrder = 14
+      object FrameColorUseDefaultCheckBox: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 0
+        Width = 190
+        Caption = 'FrameColorUseDefaultCheckBox'
+        TabOrder = 0
+        OnChange = GeneralCheckBoxOnChange
+      end
+    end
+    object Panel13: TPanel
+      Left = 230
+      Height = 23
+      Top = 55
+      Width = 203
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 203
+      TabOrder = 15
+      object FrameColorBox: TColorBox
+        Left = 0
+        Height = 22
+        Top = 0
+        Width = 200
+        DefaultColorColor = clWhite
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+        OnGetColors = GeneralColorBoxOnGetColors
+        Constraints.MaxWidth = 200
+        Constraints.MinWidth = 80
+        ItemHeight = 16
+        TabOrder = 0
+        OnChange = GeneralColorBoxOnChange
+      end
+    end
+    object Panel14: TPanel
+      Left = 436
+      Height = 23
+      Top = 55
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 123
+      TabOrder = 16
+      object FrameAlphaLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 92
+        Caption = 'FrameAlphaLabel'
+        ParentColor = False
+      end
+    end
+    object Panel15: TPanel
+      Left = 562
+      Height = 23
+      Top = 55
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 17
+      object FrameAlphaSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 256
+        MinValue = 1
+        TabOrder = 0
+        Value = 256
+        OnChange = GeneralAlphaSpinOnChange
+        OnEditingDone = GeneralAlphaSpinOnChange
+        OnEnter = GeneralAlphaSpinOnEnter
+        OnExit = GeneralAlphaSpinOnChange
+        OnResize = GeneralAlphaSpinOnChange
+      end
+    end
+    object Panel16: TPanel
+      Left = 630
+      Height = 23
+      Top = 55
+      Width = 86
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 86
+      TabOrder = 18
+      object FramePriorLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 86
+        Caption = 'FramePriorLabel'
+        ParentColor = False
+      end
+    end
+    object Panel17: TPanel
+      Left = 719
+      Height = 23
+      Top = 55
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 19
+      object FramePriorSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 9999
+        TabOrder = 0
+        Value = 1
+        OnChange = GeneralPriorSpinOnChange
+        OnEditingDone = GeneralPriorSpinOnChange
+        OnExit = GeneralPriorSpinOnChange
+      end
+    end
+    object pnlFrameHost1: TPanel
+      Left = 787
+      Height = 23
+      Top = 55
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ChildSizing.HorizontalSpacing = 3
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 2
+      TabOrder = 2
+    end
+    object lbFiller3: TLabel
+      Left = 6
+      Height = 21
+      Top = 81
+      Width = 221
+    end
+    object pnlFrameHost2: TPanel
+      Left = 230
+      Height = 21
+      Top = 81
+      Width = 203
+      BevelOuter = bvNone
+      ChildSizing.HorizontalSpacing = 3
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 2
+      ClientHeight = 21
+      ClientWidth = 203
+      TabOrder = 3
+      object FrameStyleBox: TComboBox
+        Left = 0
+        Height = 21
+        Top = 0
+        Width = 100
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'slsSolid'
+          'slsDashed'
+          'slsDotted'
+          'slsWaved'
+        )
+        Style = csOwnerDrawFixed
+        TabOrder = 0
+        Text = 'slsSolid'
+        OnChange = GeneralColorBoxOnChange
+        OnDrawItem = GeneralStyleBoxOnDrawItem
+      end
+      object FrameEdgesBox: TComboBox
+        Left = 103
+        Height = 21
+        Top = 0
+        Width = 100
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Around'
+          'Bottom'
+          'Left'
+        )
+        Style = csOwnerDrawFixed
+        TabOrder = 1
+        Text = 'Around'
+        OnChange = GeneralColorBoxOnChange
+        OnDrawItem = FrameEdgesBoxDrawItem
+      end
+    end
+    object lbFiller4: TLabel
+      Left = 436
+      Height = 21
+      Top = 81
+      Width = 123
+    end
+    object lbFiller5: TLabel
+      Left = 562
+      Height = 21
+      Top = 81
+      Width = 65
+    end
+    object lbFiller6: TLabel
+      Left = 630
+      Height = 21
+      Top = 81
+      Width = 86
+    end
+    object lbFiller7: TLabel
+      Left = 719
+      Height = 21
+      Top = 81
+      Width = 65
+    end
+    object lbFiller8: TLabel
+      Left = 787
+      Height = 21
+      Top = 81
+      Width = 123
+    end
+    object Panel18: TPanel
+      Left = 6
+      Height = 23
+      Top = 105
+      Width = 221
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 221
+      TabOrder = 20
+      object MarkupFoldColorUseDefaultCheckBox: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 0
+        Width = 221
+        Caption = 'MarkupFoldColorUseDefaultCheckBox'
+        TabOrder = 0
+        OnChange = GeneralCheckBoxOnChange
+      end
+    end
+    object Panel19: TPanel
+      Left = 230
+      Height = 23
+      Top = 105
+      Width = 203
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 203
+      TabOrder = 21
+      object MarkupFoldColorBox: TColorBox
+        Left = 0
+        Height = 22
+        Top = 0
+        Width = 100
+        DefaultColorColor = clWhite
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbIncludeDefault, cbCustomColor, cbPrettyNames, cbCustomColors]
+        OnGetColors = GeneralColorBoxOnGetColors
+        Constraints.MaxWidth = 200
+        Constraints.MinWidth = 80
+        ItemHeight = 16
+        TabOrder = 0
+        OnChange = GeneralColorBoxOnChange
+      end
+    end
+    object Panel20: TPanel
+      Left = 436
+      Height = 23
+      Top = 105
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 123
+      TabOrder = 22
+      object MarkupFoldAlphaLabel: TLabel
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 123
+        Caption = 'MarkupFoldAlphaLabel'
+        ParentColor = False
+      end
+    end
+    object Panel21: TPanel
+      Left = 562
+      Height = 23
+      Top = 105
+      Width = 65
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 65
+      TabOrder = 23
+      object MarkupFoldAlphaSpin: TSpinEdit
+        Left = 0
+        Height = 23
+        Top = 0
+        Width = 65
+        Constraints.MinWidth = 65
+        MaxValue = 256
+        MinValue = 1
+        TabOrder = 0
+        Value = 256
+        OnChange = GeneralAlphaSpinOnChange
+        OnEditingDone = GeneralAlphaSpinOnChange
+        OnEnter = GeneralAlphaSpinOnEnter
+        OnExit = GeneralAlphaSpinOnChange
+        OnResize = GeneralAlphaSpinOnChange
+      end
+    end
+    object lbFiller9: TLabel
+      Left = 630
+      Height = 23
+      Top = 105
+      Width = 86
+    end
+    object lbFiller10: TLabel
+      Left = 719
+      Height = 23
+      Top = 105
+      Width = 65
+    end
+    object Panel22: TPanel
+      Left = 787
+      Height = 23
+      Top = 105
+      Width = 123
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 23
+      ClientWidth = 123
+      TabOrder = 24
+      object MarkupFoldStyleBox: TComboBox
+        Left = 0
+        Height = 21
+        Top = 0
+        Width = 123
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'slsSolid'
+          'slsDashed'
+          'slsDotted'
+          'slsWaved'
+        )
+        Style = csOwnerDrawFixed
+        TabOrder = 0
+        Text = 'slsSolid'
+        OnChange = GeneralColorBoxOnChange
+        OnDrawItem = GeneralStyleBoxOnDrawItem
+      end
+    end
+  end
+  object pnlUnderline: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 40
+    Top = 134
+    Width = 144
+    AutoSize = True
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 3
+    BorderSpacing.Bottom = 3
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 144
+    TabOrder = 0
+    OnResize = pnlElementAttributesResize
+    object TextUnderlineRadioPanel: TPanel
+      AnchorSideLeft.Control = TextUnderlineCheckBox
+      AnchorSideTop.Control = TextUnderlineCheckBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 21
+      Top = 19
+      Width = 128
+      AutoSize = True
+      BevelInner = bvLowered
+      BevelOuter = bvNone
+      ClientHeight = 21
+      ClientWidth = 128
+      TabOrder = 0
+      object TextUnderlineRadioOn: TRadioButton
+        Tag = 3
+        AnchorSideLeft.Control = TextUnderlineRadioPanel
+        AnchorSideTop.Control = TextUnderlineRadioPanel
+        AnchorSideRight.Control = TextUnderlineRadioOff
+        Left = 4
+        Height = 19
+        Top = 1
+        Width = 34
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'On'
+        Checked = True
+        TabOrder = 0
+        TabStop = True
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextUnderlineRadioOff: TRadioButton
+        Tag = 3
+        AnchorSideLeft.Control = TextUnderlineRadioOn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextUnderlineRadioOn
+        AnchorSideRight.Control = TextUnderlineRadioInvert
+        Left = 41
+        Height = 19
+        Top = 1
+        Width = 35
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'Off'
+        TabOrder = 1
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextUnderlineRadioInvert: TRadioButton
+        Tag = 3
+        AnchorSideLeft.Control = TextUnderlineRadioOff
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextUnderlineRadioPanel
+        AnchorSideRight.Control = TextUnderlineRadioPanel
+        AnchorSideRight.Side = asrBottom
+        Left = 79
+        Height = 19
+        Top = 1
+        Width = 48
+        BorderSpacing.Left = 3
+        Caption = 'Invert'
+        TabOrder = 2
+        OnChange = TextStyleRadioOnChange
+      end
+    end
+    object TextUnderlineCheckBox: TCheckBox
+      AnchorSideLeft.Control = pnlUnderline
+      AnchorSideTop.Control = pnlUnderline
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 144
+      Caption = 'TextUnderlineCheckBox'
+      TabOrder = 1
+      OnChange = GeneralCheckBoxOnChange
+    end
+  end
+  object pnlBold: TPanel
+    AnchorSideLeft.Control = pnlUnderline
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = pnlUnderline
+    Left = 156
+    Height = 40
+    Top = 134
+    Width = 128
+    AutoSize = True
+    BorderSpacing.Left = 6
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 128
+    TabOrder = 1
+    object TextBoldRadioPanel: TPanel
+      AnchorSideLeft.Control = TextBoldCheckBox
+      AnchorSideTop.Control = TextBoldCheckBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 21
+      Top = 19
+      Width = 128
+      AutoSize = True
+      BevelInner = bvLowered
+      BevelOuter = bvNone
+      ClientHeight = 21
+      ClientWidth = 128
+      TabOrder = 0
+      object TextBoldRadioInvert: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextBoldRadioOff
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextBoldRadioPanel
+        AnchorSideRight.Control = TextBoldRadioPanel
+        AnchorSideRight.Side = asrBottom
+        Left = 79
+        Height = 19
+        Top = 1
+        Width = 48
+        BorderSpacing.Left = 3
+        Caption = 'Invert'
+        TabOrder = 2
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextBoldRadioOn: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextBoldRadioPanel
+        AnchorSideTop.Control = TextBoldRadioPanel
+        AnchorSideRight.Control = TextBoldRadioOff
+        Left = 4
+        Height = 19
+        Top = 1
+        Width = 34
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'On'
+        Checked = True
+        TabOrder = 0
+        TabStop = True
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextBoldRadioOff: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextBoldRadioOn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextBoldRadioPanel
+        AnchorSideRight.Control = TextBoldRadioInvert
+        Left = 41
+        Height = 19
+        Top = 1
+        Width = 35
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'Off'
+        TabOrder = 1
+        OnChange = TextStyleRadioOnChange
+      end
+    end
+    object TextBoldCheckBox: TCheckBox
+      AnchorSideLeft.Control = pnlBold
+      AnchorSideTop.Control = pnlBold
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 117
+      Caption = 'TextBoldCheckBox'
+      TabOrder = 1
+      OnChange = GeneralCheckBoxOnChange
+    end
+  end
+  object pnlItalic: TPanel
+    AnchorSideLeft.Control = pnlBold
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = pnlUnderline
+    Left = 290
+    Height = 40
+    Top = 134
+    Width = 128
+    AutoSize = True
+    BorderSpacing.Left = 6
+    BevelOuter = bvNone
+    ClientHeight = 40
+    ClientWidth = 128
+    TabOrder = 2
+    object TextItalicRadioPanel: TPanel
+      AnchorSideLeft.Control = TextItalicCheckBox
+      AnchorSideTop.Control = TextItalicCheckBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 21
+      Top = 19
+      Width = 128
+      AutoSize = True
+      BevelInner = bvLowered
+      BevelOuter = bvNone
+      ClientHeight = 21
+      ClientWidth = 128
+      TabOrder = 0
+      object TextItalicRadioInvert: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextItalicRadioOff
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextItalicRadioPanel
+        AnchorSideRight.Control = TextItalicRadioPanel
+        AnchorSideRight.Side = asrBottom
+        Left = 79
+        Height = 19
+        Top = 1
+        Width = 48
+        BorderSpacing.Left = 3
+        Caption = 'Invert'
+        TabOrder = 2
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextItalicRadioOn: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextItalicRadioPanel
+        AnchorSideTop.Control = TextItalicRadioPanel
+        AnchorSideRight.Control = TextItalicRadioOff
+        Left = 4
+        Height = 19
+        Top = 1
+        Width = 34
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'On'
+        Checked = True
+        TabOrder = 0
+        TabStop = True
+        OnChange = TextStyleRadioOnChange
+      end
+      object TextItalicRadioOff: TRadioButton
+        Tag = 2
+        AnchorSideLeft.Control = TextItalicRadioOn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = TextItalicRadioPanel
+        AnchorSideRight.Control = TextItalicRadioInvert
+        Left = 41
+        Height = 19
+        Top = 1
+        Width = 35
+        BorderSpacing.Left = 3
+        BorderSpacing.Right = 3
+        Caption = 'Off'
+        TabOrder = 1
+        OnChange = TextStyleRadioOnChange
+      end
+    end
+    object TextItalicCheckBox: TCheckBox
+      AnchorSideLeft.Control = pnlItalic
+      AnchorSideTop.Control = pnlItalic
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 118
+      Caption = 'TextItalicCheckBox'
+      TabOrder = 1
+      OnChange = GeneralCheckBoxOnChange
+    end
+  end
+  object lblInfo: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = pnlUnderline
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 1
+    Top = 177
+    Width = 1280
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 3
+    BorderSpacing.Right = 6
+    WordWrap = True
+    OnResize = pnlElementAttributesResize
+  end
+  object pnlWords: TPanel
+    AnchorSideLeft.Control = Panel1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Control = lblInfo
+    AnchorSideBottom.Side = asrBottom
+    Left = 916
+    Height = 178
+    Top = 0
+    Width = 182
+    Anchors = [akTop, akLeft, akBottom]
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 178
+    ClientWidth = 182
+    TabOrder = 4
+    object lbCustomWords: TLabel
+      Left = 0
+      Height = 15
+      Top = 3
+      Width = 182
+      Align = alTop
+      BorderSpacing.Top = 3
+      Caption = 'lbCustomWords'
+      WordWrap = True
+    end
+    object edCustomWord: TMemo
+      Left = 2
+      Height = 128
+      Top = 21
+      Width = 180
+      Align = alClient
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 3
+      BorderSpacing.Bottom = 3
+      Constraints.MinWidth = 180
+      TabOrder = 0
+      OnChange = edCustomWordChange
+      OnEditingDone = edCustomWordChange
+    end
+    object dropCustomWordKind: TComboBox
+      Left = 0
+      Height = 23
+      Top = 152
+      Width = 182
+      Align = alBottom
+      BorderSpacing.Bottom = 3
+      ItemHeight = 15
+      Style = csDropDownList
+      TabOrder = 1
+      OnChange = dropCustomWordKindChange
+    end
+  end
+end

@@ -1,0 +1,268 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: X-1.9\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: ACTom <i@actom.me>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: strtestcaseopts.rsalltests
+msgid "All Tests"
+msgstr ""
+
+#: strtestcaseopts.rsautomaticallyfetchtestlistonopen
+msgid "Automatically fetch test list on open"
+msgstr ""
+
+#: strtestcaseopts.rscouldnotdete
+#, object-pascal-format
+msgid "Could not determine class and method from test path \"%s\""
+msgstr ""
+
+#: strtestcaseopts.rserrors
+#, object-pascal-format
+msgid "%s    Errors: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexception
+#, object-pascal-format
+msgid "Exception: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexceptioncla
+#, object-pascal-format
+msgid "Exception class: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexceptionmes
+#, object-pascal-format
+msgid "Exception message: %s"
+msgstr ""
+
+#: strtestcaseopts.rsfailures
+#, object-pascal-format
+msgid "%s     Failures: %s"
+msgstr ""
+
+#: strtestcaseopts.rsmessage
+#, object-pascal-format
+msgid "Message: %s"
+msgstr ""
+
+#: strtestcaseopts.rsnexterror
+msgid "Next error"
+msgstr ""
+
+#: strtestcaseopts.rspreviouserror
+msgid "Previous error"
+msgstr ""
+
+#: strtestcaseopts.rsruns
+#, object-pascal-format
+msgid "Runs: %s/%s"
+msgstr ""
+
+#: strtestcaseopts.rsserverpath
+msgid "Server path"
+msgstr ""
+
+#: strtestcaseopts.rsserverport
+msgid "Server port"
+msgstr ""
+
+#: strtestcaseopts.rstestinsighttitle
+msgid "Test Insight"
+msgstr ""
+
+#: strtestcaseopts.sactcheckall
+msgid "Select all tests"
+msgstr ""
+
+#: strtestcaseopts.sactcheckcurrentsuite
+msgid "Select current suite"
+msgstr ""
+
+#: strtestcaseopts.sactcloseform
+msgid "Quit"
+msgstr ""
+
+#: strtestcaseopts.sactcloseformh
+msgid "Quit testing"
+msgstr ""
+
+#: strtestcaseopts.sactcopyalltoclipboard
+msgid "Copy text to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactcopyalltoclipboardh
+msgid "Copy the entire text to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactcopymessagetoclipboard
+msgctxt "strtestcaseopts.sactcopymessagetoclipboard"
+msgid "Copy message to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactrunaction
+msgid "&Run all"
+msgstr ""
+
+#: strtestcaseopts.sactrunactionh
+msgid "Run all checked tests"
+msgstr ""
+
+#: strtestcaseopts.sactrunhighlightedtest
+msgid "Run selected"
+msgstr ""
+
+#: strtestcaseopts.sactrunhighlightedtesth
+msgid "Run selected test"
+msgstr ""
+
+#: strtestcaseopts.sactuncheckall
+msgid "Deselect all tests"
+msgstr ""
+
+#: strtestcaseopts.sactuncheckcurrentsuite
+msgid "Deselect current suite"
+msgstr ""
+
+#: strtestcaseopts.sbtncreate
+msgid "Create unit"
+msgstr "创建单元"
+
+#: strtestcaseopts.schksetup
+msgid "Create Setup Method"
+msgstr "创建 Setup 方法"
+
+#: strtestcaseopts.schktear
+msgid "Create TearDown method"
+msgstr "创建 TearDown 方法"
+
+#: strtestcaseopts.screatefirsttestcase
+msgid "&Create first test case"
+msgstr ""
+
+#: strtestcaseopts.sdefault
+msgid "Default"
+msgstr ""
+
+#: strtestcaseopts.sdefaultoutputformat
+msgid "Default output &format"
+msgstr ""
+
+#: strtestcaseopts.sfpcunconsoletestapp
+msgid "FPCUnit Console Test Application"
+msgstr "FPCUnit 控制台测试应用程序"
+
+#: strtestcaseopts.sfpcunconsoletestdesc
+msgid "An application to run FPCUnit test cases in console mode."
+msgstr "一个运行 FPCUnit 测试用例的控制台应用程序。"
+
+#: strtestcaseopts.sfpcuntestapp
+msgid "FPCUnit Test Application"
+msgstr "FPCUnit 测试应用程序"
+
+#: strtestcaseopts.sfpcuntestappdesc
+msgid "An application to run FPCUnit test cases."
+msgstr "一个运行 FPCUnit 测试用例的应用程序。"
+
+#: strtestcaseopts.sfpcuntestcase
+msgid "FPCUnit Test Case"
+msgstr "FPCUnit 测试用例"
+
+#: strtestcaseopts.sfpcuntestcasedesc
+msgid "A unit containing a FPCUnit Test Case."
+msgstr "一个含有 FPCUnit 测试用例的单元。"
+
+#: strtestcaseopts.sfrmguitest
+msgid "FPCUnit - run unit test"
+msgstr ""
+
+#: strtestcaseopts.sfrmtest
+msgid "TestCase Options"
+msgstr "TestCase选择"
+
+#: strtestcaseopts.sgrpfixture
+msgid "Fixture"
+msgstr "初始化设置"
+
+#: strtestcaseopts.sgrpnames
+msgid "Names"
+msgstr "名称"
+
+#: strtestcaseopts.slatex
+msgid "LaTeX"
+msgstr ""
+
+#: strtestcaseopts.slbldefault
+msgid "Default Test Name"
+msgstr "默认测试名称"
+
+#: strtestcaseopts.smiactions
+msgid "Actions"
+msgstr ""
+
+#: strtestcaseopts.smicollapsenodes
+msgid "Collapse Nodes"
+msgstr ""
+
+#: strtestcaseopts.smiedit
+msgid "Edit"
+msgstr ""
+
+#: strtestcaseopts.smiexpandnodes
+msgid "Expand Nodes"
+msgstr ""
+
+#: strtestcaseopts.smitesttree
+msgid "Test tree"
+msgstr ""
+
+#: strtestcaseopts.snavigationnotavailable
+msgid "Source navigation not available."
+msgstr ""
+
+#: strtestcaseopts.snewfpcunitprogramtor
+msgid "New FPCUnit console testrunner program"
+msgstr ""
+
+#: strtestcaseopts.snoexecutableavailable
+#, object-pascal-format
+msgid "Test executable is not available: \"%s\""
+msgstr ""
+
+#: strtestcaseopts.snotestprojectconfigured
+msgid "No test project configured."
+msgstr ""
+
+#: strtestcaseopts.splaintext
+msgid "Plain text"
+msgstr ""
+
+#: strtestcaseopts.splaintextwithouttimi
+msgid "Plain text without timings"
+msgstr ""
+
+#: strtestcaseopts.srunalltests
+msgid "&Run all tests by default"
+msgstr ""
+
+#: strtestcaseopts.susetextinsight
+msgid "Use &Test Insight to communicate results to the IDE"
+msgstr ""
+
+#: strtestcaseopts.swriteyourowntest
+msgid "Write your own test"
+msgstr "编写您自己的测试"
+
+#: strtestcaseopts.sxml
+msgid "XML"
+msgstr ""
+

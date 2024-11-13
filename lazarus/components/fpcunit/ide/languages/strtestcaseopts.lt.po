@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: Valdas Jankunas <zmuogs@gmail.com>\n"
+"PO-Revision-Date: 2012-08-06 13:28+0300\n"
+"Project-Id-Version: \n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: strtestcaseopts.rsalltests
+msgid "All Tests"
+msgstr ""
+
+#: strtestcaseopts.rsautomaticallyfetchtestlistonopen
+msgid "Automatically fetch test list on open"
+msgstr ""
+
+#: strtestcaseopts.rscouldnotdete
+#, object-pascal-format
+msgid "Could not determine class and method from test path \"%s\""
+msgstr ""
+
+#: strtestcaseopts.rserrors
+#, object-pascal-format
+msgid "%s    Errors: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexception
+#, object-pascal-format
+msgid "Exception: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexceptioncla
+#, object-pascal-format
+msgid "Exception class: %s"
+msgstr ""
+
+#: strtestcaseopts.rsexceptionmes
+#, object-pascal-format
+msgid "Exception message: %s"
+msgstr ""
+
+#: strtestcaseopts.rsfailures
+#, object-pascal-format
+msgid "%s     Failures: %s"
+msgstr ""
+
+#: strtestcaseopts.rsmessage
+#, object-pascal-format
+msgid "Message: %s"
+msgstr ""
+
+#: strtestcaseopts.rsnexterror
+msgid "Next error"
+msgstr ""
+
+#: strtestcaseopts.rspreviouserror
+msgid "Previous error"
+msgstr ""
+
+#: strtestcaseopts.rsruns
+#, object-pascal-format
+msgid "Runs: %s/%s"
+msgstr ""
+
+#: strtestcaseopts.rsserverpath
+msgid "Server path"
+msgstr ""
+
+#: strtestcaseopts.rsserverport
+msgid "Server port"
+msgstr ""
+
+#: strtestcaseopts.rstestinsighttitle
+msgid "Test Insight"
+msgstr ""
+
+#: strtestcaseopts.sactcheckall
+msgid "Select all tests"
+msgstr ""
+
+#: strtestcaseopts.sactcheckcurrentsuite
+msgid "Select current suite"
+msgstr ""
+
+#: strtestcaseopts.sactcloseform
+msgid "Quit"
+msgstr ""
+
+#: strtestcaseopts.sactcloseformh
+msgid "Quit testing"
+msgstr ""
+
+#: strtestcaseopts.sactcopyalltoclipboard
+msgid "Copy text to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactcopyalltoclipboardh
+msgid "Copy the entire text to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactcopymessagetoclipboard
+msgctxt "strtestcaseopts.sactcopymessagetoclipboard"
+msgid "Copy message to clipboard"
+msgstr ""
+
+#: strtestcaseopts.sactrunaction
+msgid "&Run all"
+msgstr ""
+
+#: strtestcaseopts.sactrunactionh
+msgid "Run all checked tests"
+msgstr ""
+
+#: strtestcaseopts.sactrunhighlightedtest
+msgid "Run selected"
+msgstr ""
+
+#: strtestcaseopts.sactrunhighlightedtesth
+msgid "Run selected test"
+msgstr ""
+
+#: strtestcaseopts.sactuncheckall
+msgid "Deselect all tests"
+msgstr ""
+
+#: strtestcaseopts.sactuncheckcurrentsuite
+msgid "Deselect current suite"
+msgstr ""
+
+#: strtestcaseopts.sbtncreate
+msgid "Create unit"
+msgstr "Kurti modulį"
+
+#: strtestcaseopts.schksetup
+msgid "Create Setup Method"
+msgstr "Kurti sąrankos metodą"
+
+#: strtestcaseopts.schktear
+msgid "Create TearDown method"
+msgstr "Kurti „TearDown“ metodą"
+
+#: strtestcaseopts.screatefirsttestcase
+msgid "&Create first test case"
+msgstr ""
+
+#: strtestcaseopts.sdefault
+msgid "Default"
+msgstr ""
+
+#: strtestcaseopts.sdefaultoutputformat
+msgid "Default output &format"
+msgstr ""
+
+#: strtestcaseopts.sfpcunconsoletestapp
+msgid "FPCUnit Console Test Application"
+msgstr "FPCUnit testo pulte programa"
+
+#: strtestcaseopts.sfpcunconsoletestdesc
+#, fuzzy
+#| msgid "FPCUnit Console Test Application%sAn application to run FPCUnit test cases in console mode.%sThe application source is automatically maintained by Lazarus."
+msgid "An application to run FPCUnit test cases in console mode."
+msgstr "FPCUnit testo pulte programa%sPrograma, kuri pulte vykdys FPCUnit testuojamus atvejus.%sLazarus automatiškai rūpinsis programos pirminiu kodu."
+
+#: strtestcaseopts.sfpcuntestapp
+msgid "FPCUnit Test Application"
+msgstr "FPCUnit testo programa"
+
+#: strtestcaseopts.sfpcuntestappdesc
+#, fuzzy
+#| msgid "FPCUnit Test Application%sAn application to run FPCUnit test cases.%sThe application source is automatically maintained by Lazarus."
+msgid "An application to run FPCUnit test cases."
+msgstr "FPCUnit testo programa%sPrograma, vykdanti FPCUnit testuojamus atvejus.%sLazarus automatiškai rūpinsis programos pirminiu kodu."
+
+#: strtestcaseopts.sfpcuntestcase
+msgid "FPCUnit Test Case"
+msgstr "FPCUnit testavimo atvejis"
+
+#: strtestcaseopts.sfpcuntestcasedesc
+#, fuzzy
+#| msgid "FPCUnit Test Case%sA unit containing a FPCUnit Test Case."
+msgid "A unit containing a FPCUnit Test Case."
+msgstr "FPCUnit testavimo atvejis%sModulis, kuriame aprašytas FPCUnit testavimo atvejis."
+
+#: strtestcaseopts.sfrmguitest
+msgid "FPCUnit - run unit test"
+msgstr ""
+
+#: strtestcaseopts.sfrmtest
+msgid "TestCase Options"
+msgstr "„TestCase“ parinktys"
+
+#: strtestcaseopts.sgrpfixture
+msgid "Fixture"
+msgstr "Turinys"
+
+#: strtestcaseopts.sgrpnames
+msgid "Names"
+msgstr "Pavadinimai"
+
+#: strtestcaseopts.slatex
+msgid "LaTeX"
+msgstr ""
+
+#: strtestcaseopts.slbldefault
+msgid "Default Test Name"
+msgstr "Numatytas testavimo pavadinimas"
+
+#: strtestcaseopts.smiactions
+msgid "Actions"
+msgstr ""
+
+#: strtestcaseopts.smicollapsenodes
+msgid "Collapse Nodes"
+msgstr ""
+
+#: strtestcaseopts.smiedit
+msgid "Edit"
+msgstr ""
+
+#: strtestcaseopts.smiexpandnodes
+msgid "Expand Nodes"
+msgstr ""
+
+#: strtestcaseopts.smitesttree
+msgid "Test tree"
+msgstr ""
+
+#: strtestcaseopts.snavigationnotavailable
+msgid "Source navigation not available."
+msgstr ""
+
+#: strtestcaseopts.snewfpcunitprogramtor
+msgid "New FPCUnit console testrunner program"
+msgstr ""
+
+#: strtestcaseopts.snoexecutableavailable
+#, object-pascal-format
+msgid "Test executable is not available: \"%s\""
+msgstr ""
+
+#: strtestcaseopts.snotestprojectconfigured
+msgid "No test project configured."
+msgstr ""
+
+#: strtestcaseopts.splaintext
+msgid "Plain text"
+msgstr ""
+
+#: strtestcaseopts.splaintextwithouttimi
+msgid "Plain text without timings"
+msgstr ""
+
+#: strtestcaseopts.srunalltests
+msgid "&Run all tests by default"
+msgstr ""
+
+#: strtestcaseopts.susetextinsight
+msgid "Use &Test Insight to communicate results to the IDE"
+msgstr ""
+
+#: strtestcaseopts.swriteyourowntest
+msgid "Write your own test"
+msgstr "Sukurkite savo testavimą"
+
+#: strtestcaseopts.sxml
+msgid "XML"
+msgstr ""
+

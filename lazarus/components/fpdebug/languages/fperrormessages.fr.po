@@ -1,0 +1,238 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-10-19 07:54+0100\n"
+"PO-Revision-Date: 2024-10-19 08:53+0200\n"
+"Last-Translator: Vasseur Gilles <gillesvasseur58@gmail.com>\n"
+"Language-Team: http://lazarus.developpez.com/\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#: fperrormessages.fpgdbmidisplaygdbinsteadoffpdebugwatches
+msgid "Display GDB instead of FpDebug Watches"
+msgstr "Afficher les suivis GDB au lieu de FpDebug"
+
+#: fperrormessages.msgfperraddressisnil
+msgid "Cannot access data, Address is NIL"
+msgstr "Donnée inaccessible, l'adresse est NIL"
+
+#: fperrormessages.msgfperranyerror
+#, object-pascal-format
+msgid "%1:s"
+msgstr "%1:s"
+
+#: fperrormessages.msgfperrattachprocess
+#, object-pascal-format
+msgid "Failed to attach to process \"%1:s\".%0:sError message: %2:d \"%3:s\".%0:s%4:s"
+msgstr "Impossible d'attacher le processus \"%1:s\".%0:sMessage d'erreur : %2:d \"%3:s\".%0:s%4:s"
+
+#: fperrormessages.msgfperrcannotcasttopointer_p
+#, object-pascal-format
+msgid "Can't cast value to pointer '%1:s'%2:s"
+msgstr "Impossible de convertir une valeur en pointeur '%1:s'%2:s"
+
+#: fperrormessages.msgfperrcannotderef_p
+#, object-pascal-format
+msgid "Can't dereference expression '%1:s'%2:s"
+msgstr "Impossible de déréférencer l'expression '%1:s'%2:s"
+
+#: fperrormessages.msgfperrcannotreadmemataddr
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrcannotreadmemataddr"
+msgid "Failed to read Mem at Address $%1:x"
+msgstr "Impossible de lire la mémoire à l'adresse $%1:x"
+
+#: fperrormessages.msgfperrcannotwritememataddr
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrcannotwritememataddr"
+msgid "Failed to write Mem at Address $%1:x"
+msgstr "Impossible d'écrire la mémoire à l'adresse $%1:x"
+
+#: fperrormessages.msgfperrchangevariablenotsupported
+msgid "Changing the value of this variable is not supported"
+msgstr "La modification de la valeur de cette variable n'est pas prise en charge"
+
+#: fperrormessages.msgfperrcreateprocess
+#, object-pascal-format
+msgid "Failed to start process \"%1:s\".%0:sError message: %2:d \"%3:s\".%0:s%4:s"
+msgstr "Échec du démarrage du processus \"%1:s\".%0:sMessage d'erreur : %2:d \"%3:s\".%0:s%4:s"
+
+#: fperrormessages.msgfperrexpectedordinalval_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrexpectedordinalval_p"
+msgid "Expected an ordinal value, but found '%1:s'%2:s"
+msgstr "Valeur ordinale attendue, mais '%1:s'%2:s trouvé"
+
+#: fperrormessages.msgfperrfailedreadregiseter
+msgid "Failed to read data from register"
+msgstr "Échec de la lecture des données du registre"
+
+#: fperrormessages.msgfperrfailedwritemem
+msgctxt "fperrormessages.msgfperrfailedwritemem"
+msgid "Failed to write data"
+msgstr "Échec de l'écriture des données"
+
+#: fperrormessages.msgfperrindexoutofrange
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrindexoutofrange"
+msgid "Index out of range: %1:d"
+msgstr "Index incorrect : %1:d"
+
+#: fperrormessages.msgfperrlocationnotinlist
+msgid "Value not available at current code location"
+msgstr "Valeur non disponible à l'emplacement actuel du code"
+
+#: fperrormessages.msgfperrlocationparser
+msgid "Internal Error: Cannot calculate location."
+msgstr "Erreur interne : impossible de calculer l'emplacement."
+
+#: fperrormessages.msgfperrlocationparserinit
+msgid "Internal Error: Cannot calculate location (Init)."
+msgstr "Erreur interne : impossible de calculer l'emplacement (Init)."
+
+#: fperrormessages.msgfperrlocationparsermemread
+#, object-pascal-format
+msgid "%1:s (while calculating location)"
+msgstr "%1:s (lors du calcul de l'emplacement)"
+
+#: fperrormessages.msgfperrlocationparserminstack
+msgid "Not enough elements on stack."
+msgstr "Pas assez d'éléments sur la pile."
+
+#: fperrormessages.msgfperrlocationparsernoaddressonstack
+msgid "Not an address on stack"
+msgstr "Pas d'adresse sur la pile"
+
+#: fperrormessages.msgfperrnomemberwithname
+#, object-pascal-format
+msgid "Member not found: %1:s"
+msgstr "Membre introuvable : %1:s"
+
+#: fperrormessages.msgfperrorbadfloatsize
+msgid "Unsupported float value: Unknown precision"
+msgstr "Valeur flottante non prise en charge : précision inconnue"
+
+#: fperrormessages.msgfperrornotastructure
+#, object-pascal-format
+msgid "Cannot get member \"%1:s\" from non-structured type: %2:s"
+msgstr "Impossible d'obtenir le membre \"%1:s\" à partir du type non structuré : %2:s"
+
+#: fperrormessages.msgfperrpasparseremptyexpression
+msgid "Empty expression"
+msgstr "Expression vide"
+
+#: fperrormessages.msgfperrpasparserexpectednumber_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparserexpectednumber_p"
+msgid "Expected Number, but found '%1:s'%2:s"
+msgstr "Nombre attendu, mais '%1:s'%2:s trouvé"
+
+#: fperrormessages.msgfperrpasparserindexerror_wrapper
+#, object-pascal-format
+msgid "Index error at pos %2:d for '%1:s'[]: %3:s"
+msgstr "Erreur d'index à la position %2:d pour '%1:s'[] : %3:s"
+
+#: fperrormessages.msgfperrpasparserinvalidexpression
+msgid "Invalid Expression"
+msgstr "Expression invalide"
+
+#: fperrormessages.msgfperrpasparsermissingexpraftercomma
+#, object-pascal-format
+msgid "Expected Expression after Comma, but found closing bracket %1:s at pos %2:d"
+msgstr "Expression attendue après la virgule, mais crochet fermant trouvé %1:s à la position %2:d"
+
+#: fperrormessages.msgfperrpasparsermissingindexexpression
+#, object-pascal-format
+msgid "Expected Expression but found closing bracket: '%1:s' at pos %2:d"
+msgstr "Expression attendue, mais crochet fermant trouvé : %1:s à la position %2:d"
+
+#: fperrormessages.msgfperrpasparsermissingopenbracket_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparsermissingopenbracket_p"
+msgid "No opening bracket for '%1:s' found%2:s"
+msgstr "Aucune parenthèse ouvrante pour '%1:s' n'a été trouvée%2:s"
+
+#: fperrormessages.msgfperrpasparserunexpectedendofexpression
+#, object-pascal-format
+msgid "Unexpected end of expression after '%1:s'"
+msgstr "Fin d'expression inattendue après \"%1:s\""
+
+#: fperrormessages.msgfperrpasparserunexpectedtoken_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparserunexpectedtoken_p"
+msgid "Unexpected token '%1:s'%2:s"
+msgstr "Unité lexicale inattendue '%1:s'%2:s"
+
+#: fperrormessages.msgfperrpasparserunknownintrinsic_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparserunknownintrinsic_p"
+msgid "Intrinsic function '%1:s' not found%2:s"
+msgstr "Fonction intrinsèque '%1:s' introuvable%2:s"
+
+#: fperrormessages.msgfperrpasparserunterminatedstring_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparserunterminatedstring_p"
+msgid "String not terminated%1:s"
+msgstr "Chaîne de caractères non terminée%1:s"
+
+#: fperrormessages.msgfperrpasparserwrongopenbracket_p
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparserwrongopenbracket_p"
+msgid "Mismatched opening bracket ('%3:s' at pos %2:d) for '%1:s' found%4:s"
+msgstr "Crochet ouvrant ('%3:s' à la position %2:d) non concordant pour '%1:s' trouvé%4:s"
+
+#: fperrormessages.msgfperrpasparser_atstart
+msgid " at start of expression"
+msgstr " au début de l'expression"
+
+#: fperrormessages.msgfperrpasparser_position
+#, object-pascal-format
+msgid " at pos %1:d"
+msgstr " à la position %1:d"
+
+#: fperrormessages.msgfperrpasparser_positionafter
+#, object-pascal-format
+msgctxt "fperrormessages.msgfperrpasparser_positionafter"
+msgid " at pos %1:d after '%2:s'"
+msgstr " à la position %1:d après '%2:s'"
+
+#: fperrormessages.msgfperrreadmemsizelimit
+msgid "Memory read size exceeds limit"
+msgstr "La taille de lecture de la mémoire dépasse la limite"
+
+#: fperrormessages.msgfperrsymbolnotfound_p
+#, object-pascal-format
+msgid "Identifier not found: \"%1:s\"%2:s"
+msgstr "Identificateur introuvable : \"%1:s\"%2:s"
+
+#: fperrormessages.msgfperrtypehasnoindex
+#, object-pascal-format
+msgid "Cannot access indexed element in expression %1:s"
+msgstr "Impossible d'accéder à l'élément indexé dans l'expression %1:s"
+
+#: fperrormessages.msgfperrtypenotindexable
+msgctxt "fperrormessages.msgfperrtypenotindexable"
+msgid "The value has no index"
+msgstr "La valeur n'a pas d'index"
+
+#: fperrormessages.msgfpinternalerr
+#, object-pascal-format
+msgid "Internal error: %1:s"
+msgstr "Erreur interne : %1:s"
+
+#: fperrormessages.msgfpinternalerrcannotreadinvalidmem
+msgid "Internal error: Missing data location"
+msgstr "Erreur interne : emplacement des données manquant"
+
+#: fperrormessages.msgfpinternalerrcannotwriteinvalidmem
+msgid "Internal error writing data: Missing data location"
+msgstr "Erreur interne d'écriture des données : emplacement des données manquant"
+
+#: fperrormessages.msgfpinternalerrfperrfailedreadmem
+msgid "Internal error: Failed to read data from memory"
+msgstr "Erreur interne : échec de la lecture des données de la mémoire"
+

@@ -1,0 +1,129 @@
+object frmAllCompilerOptions: TfrmAllCompilerOptions
+  Left = 311
+  Height = 497
+  Top = 189
+  Width = 622
+  Caption = 'frmAllCompilerOptions'
+  ClientHeight = 497
+  ClientWidth = 622
+  Position = poWorkAreaCenter
+  OnCreate = FormCreate
+  LCLVersion = '1.3'
+  object sbAllOptions: TScrollBox
+    Left = 0
+    Height = 418
+    Top = 33
+    Width = 622
+    HorzScrollBar.Increment = 61
+    HorzScrollBar.Page = 618
+    HorzScrollBar.Smooth = True
+    HorzScrollBar.Tracking = True
+    VertScrollBar.Increment = 40
+    VertScrollBar.Page = 407
+    VertScrollBar.Smooth = True
+    VertScrollBar.Tracking = True
+    Align = alClient
+    Anchors = []
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 34
+    Top = 457
+    Width = 610
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel, pbHelp]
+  end
+  object pnlFilter: TPanel
+    Left = 0
+    Height = 33
+    Top = 0
+    Width = 622
+    Align = alTop
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 33
+    ClientWidth = 622
+    TabOrder = 2
+    object edOptionsFilter: TEdit
+      Left = 6
+      Height = 21
+      Top = 6
+      Width = 120
+      Align = alLeft
+      BorderSpacing.Left = 6
+      BorderSpacing.Top = 6
+      BorderSpacing.Bottom = 6
+      OnChange = edOptionsFilterChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object btnResetOptionsFilter: TSpeedButton
+      Left = 126
+      Height = 21
+      Top = 6
+      Width = 23
+      Align = alLeft
+      BorderSpacing.Top = 6
+      BorderSpacing.Bottom = 6
+      OnClick = btnResetOptionsFilterClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object cbShowModified: TCheckBox
+      AnchorSideLeft.Control = btnResetOptionsFilter
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = edOptionsFilter
+      AnchorSideTop.Side = asrCenter
+      Left = 155
+      Height = 17
+      Top = 8
+      Width = 112
+      BorderSpacing.Left = 6
+      Caption = 'Show only modified'
+      OnClick = cbShowModifiedClick
+      TabOrder = 1
+    end
+    object cbUseComments: TCheckBox
+      AnchorSideLeft.Control = cbShowModified
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = edOptionsFilter
+      AnchorSideTop.Side = asrCenter
+      Left = 273
+      Height = 17
+      Top = 8
+      Width = 175
+      BorderSpacing.Left = 6
+      Caption = 'Use comments in custom options'
+      TabOrder = 2
+    end
+  end
+  object txtErrorMsg: TStaticText
+    AnchorSideLeft.Control = sbAllOptions
+    AnchorSideTop.Control = sbAllOptions
+    AnchorSideRight.Control = sbAllOptions
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 14
+    Top = 39
+    Width = 610
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Around = 6
+    Caption = 'Error'
+    TabOrder = 3
+    Visible = False
+  end
+end

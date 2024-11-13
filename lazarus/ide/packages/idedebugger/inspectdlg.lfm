@@ -1,0 +1,220 @@
+object IDEInspectDlg: TIDEInspectDlg
+  Left = 430
+  Height = 596
+  Top = 155
+  Width = 498
+  BorderStyle = bsSizeToolWin
+  Caption = 'IDEInspectDlg'
+  ClientHeight = 596
+  ClientWidth = 498
+  Constraints.MinHeight = 200
+  Constraints.MinWidth = 200
+  KeyPreview = True
+  LCLVersion = '3.99.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnMouseDown = DataGridMouseDown
+  OnShow = FormShow
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 573
+    Width = 498
+    Panels = <>
+  end
+  object PageControl: TPageControl
+    Left = 0
+    Height = 523
+    Top = 50
+    Width = 498
+    ActivePage = ErrorPage
+    Align = alClient
+    TabIndex = 3
+    TabOrder = 1
+    OnMouseDown = DataGridMouseDown
+    object DataPage: TTabSheet
+      Caption = 'DataPage'
+      OnMouseDown = DataGridMouseDown
+    end
+    object PropertiesPage: TTabSheet
+      Caption = 'PropertiesPage'
+      OnMouseDown = DataGridMouseDown
+    end
+    object MethodsPage: TTabSheet
+      Caption = 'MethodsPage'
+      OnMouseDown = DataGridMouseDown
+    end
+    object ErrorPage: TTabSheet
+      Caption = 'ErrorPage'
+      ClientHeight = 487
+      ClientWidth = 488
+      PopupMenu = PopupMenu1
+      TabVisible = False
+      OnMouseDown = DataGridMouseDown
+      object ErrorLabel: TLabel
+        Left = 0
+        Height = 1
+        Top = 0
+        Width = 490
+        Align = alTop
+        ParentColor = False
+        PopupMenu = PopupMenu1
+        OnMouseDown = DataGridMouseDown
+      end
+    end
+  end
+  inline WatchInspectNav1: TWatchInspectNav
+    Height = 50
+    Width = 498
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 498
+    inherited ToolBar1: TToolBar
+      Height = 68
+      Width = 498
+      inherited tbDivCol: TToolButton
+        Left = 151
+        Top = 24
+      end
+      inherited edFilter: TEditButton
+        Left = 1
+        Top = 24
+      end
+      inherited ArrayNavigationBar1: TArrayNavigationBar
+        Left = 156
+        Height = 23
+        Top = 24
+        Width = 253
+        AutoSize = True
+        ClientHeight = 23
+        ClientWidth = 253
+        TabOrder = 1
+        inherited btnArrayStart: TSpeedButton
+          AnchorSideLeft.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited btnArrayFastDown: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited edArrayStart: TLazIntegerEdit
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited btnArrayFastUp: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited btnArrayEnd: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited Label1: TLabel
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited btnArrayPageDec: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited edArrayPageSize: TLazIntegerEdit
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited btnArrayPageInc: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited lblBounds: TLabel
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+        end
+        inherited cbEnforceBound: TCheckBox
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Height = 36
+          Width = 133
+        end
+        inherited btnHide: TSpeedButton
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Left = 411
+          Height = 34
+          Width = 10
+        end
+        inherited cbAutoHide: TCheckBox
+          AnchorSideTop.Control = WatchInspectNav1.ArrayNavigationBar1
+          AnchorSideBottom.Control = WatchInspectNav1.ArrayNavigationBar1
+          Left = 427
+          Height = 36
+          Width = 102
+        end
+      end
+      inherited tbDivArray: TToolButton
+        Left = 409
+      end
+      inherited BtnAddWatch: TToolButton
+        Left = 414
+      end
+      inherited BtnInspect: TToolButton
+        Left = 53
+        Top = 46
+      end
+      inherited BtnEvaluate: TToolButton
+        Left = 1
+        Top = 46
+      end
+      inherited tbDivAdd: TToolButton
+        Left = 99
+        Top = 46
+      end
+      inherited btnEvalHistory: TToolButton
+        Left = 104
+        Top = 46
+      end
+    end
+    inherited Panel1: TPanel
+      Width = 498
+      ClientWidth = 498
+      inherited EdInspect: TComboBox
+        Width = 476
+      end
+      inherited BtnExecute: TSpeedButton
+        Left = 477
+      end
+    end
+  end
+  object TimerClearData: TTimer
+    Enabled = False
+    Interval = 750
+    OnTimer = TimerClearDataTimer
+    Left = 441
+    Top = 10
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 186
+    Top = 211
+    object menuCopyValue: TMenuItem
+      Caption = 'menuCopyValue'
+      OnClick = menuCopyValueClick
+    end
+  end
+  object TimerFilter: TTimer
+    Interval = 250
+    OnTimer = TimerFilterTimer
+    Left = 409
+    Top = 155
+  end
+end

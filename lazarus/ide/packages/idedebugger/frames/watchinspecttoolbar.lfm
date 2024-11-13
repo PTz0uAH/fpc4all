@@ -1,0 +1,366 @@
+object WatchInspectNav: TWatchInspectNav
+  Left = 0
+  Height = 112
+  Top = 0
+  Width = 1040
+  ClientHeight = 112
+  ClientWidth = 1040
+  TabOrder = 0
+  OnResize = FrameResize
+  DesignLeft = 66
+  DesignTop = 35
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 60
+    Top = 38
+    Width = 1040
+    AutoSize = True
+    Caption = 'ToolBar1'
+    List = True
+    ParentShowHint = False
+    ShowCaptions = True
+    ShowHint = True
+    TabOrder = 1
+    object btnPower: TToolButton
+      Left = 1
+      Top = 2
+      Caption = 'O'
+      Down = True
+      ShowCaption = False
+      Style = tbsCheck
+      OnClick = btnPowerClick
+    end
+    object tbDivPower: TToolButton
+      Left = 24
+      Height = 22
+      Top = 2
+      Caption = 'tbDivPower'
+      Style = tbsDivider
+    end
+    object btnBackward: TToolButton
+      Left = 29
+      Top = 2
+      Caption = '<<'
+      OnClick = btnBackwardClick
+    end
+    object btnForward: TToolButton
+      Left = 55
+      Top = 2
+      Caption = '>>'
+      OnClick = btnForwardClick
+    end
+    object tbDivForwBackw: TToolButton
+      Left = 81
+      Height = 22
+      Top = 2
+      Caption = 'tbDivForwBackw'
+      Style = tbsDivider
+    end
+    object btnUseInstance: TToolButton
+      Left = 86
+      Hint = 'Use Instance class'
+      Top = 2
+      AllowAllUp = True
+      Caption = 'Instance'
+      Down = True
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsCheck
+      OnClick = btnFunctionEvalClick
+    end
+    object btnFunctionEval: TToolButton
+      Left = 149
+      Hint = 'Evaluate Functions'
+      Top = 2
+      AllowAllUp = True
+      Caption = 'Function'
+      Down = True
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsCheck
+      OnClick = btnFunctionEvalClick
+    end
+    object btnUseConverter: TToolButton
+      Left = 213
+      Hint = 'Use Converter'
+      Top = 2
+      AllowAllUp = True
+      Caption = 'Converter'
+      DropdownMenu = popConverter
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsButtonDrop
+    end
+    object btnUseValFormatter: TToolButton
+      Left = 299
+      Hint = 'Use Value-formatter'
+      Top = 2
+      AllowAllUp = True
+      Caption = 'Formatter'
+      DropdownMenu = popValFormatter
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsButtonDrop
+    end
+    object tbDivFlags: TToolButton
+      Left = 387
+      Height = 22
+      Top = 2
+      Caption = 'tbDivFlags'
+      Style = tbsDivider
+    end
+    object btnColClass: TToolButton
+      Left = 392
+      Hint = 'Show Class Column'
+      Top = 2
+      AllowAllUp = True
+      Caption = 'C'
+      Down = True
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsCheck
+      OnClick = btnColTypeClick
+    end
+    object btnColType: TToolButton
+      Left = 415
+      Top = 2
+      AllowAllUp = True
+      Caption = 'T'
+      Down = True
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsCheck
+      OnClick = btnColTypeClick
+    end
+    object btnColVisibility: TToolButton
+      Left = 438
+      Top = 2
+      AllowAllUp = True
+      Caption = 'V'
+      Down = True
+      ParentShowHint = False
+      ShowHint = True
+      Style = tbsCheck
+      OnClick = btnColTypeClick
+    end
+    object btnWordWrap: TToolButton
+      Left = 461
+      Top = 2
+      Style = tbsCheck
+      OnClick = btnWordWrapClick
+    end
+    object tbDivCol: TToolButton
+      Left = 657
+      Height = 22
+      Top = 2
+      Caption = 'tbDivCol'
+      Style = tbsDivider
+    end
+    object edFilter: TEditButton
+      Left = 507
+      Height = 36
+      Top = 2
+      Width = 150
+      ButtonWidth = 23
+      MaxLength = 0
+      NumGlyphs = 1
+      PasswordChar = #0
+      TabOrder = 0
+      TextHint = 'filter'
+      Visible = False
+    end
+    inline ArrayNavigationBar1: TArrayNavigationBar
+      Left = 1
+      Height = 36
+      Top = 24
+      Width = 529
+      AutoSize = True
+      ClientHeight = 36
+      ClientWidth = 529
+      TabOrder = 1
+      inherited btnArrayStart: TSpeedButton
+        AnchorSideLeft.Control = ArrayNavigationBar1
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited btnArrayFastDown: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited edArrayStart: TLazIntegerEdit
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited btnArrayFastUp: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited btnArrayEnd: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited Label1: TLabel
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited btnArrayPageDec: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited edArrayPageSize: TLazIntegerEdit
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited btnArrayPageInc: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited lblBounds: TLabel
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+      end
+      inherited cbEnforceBound: TCheckBox
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Height = 36
+        Width = 133
+      end
+      inherited btnHide: TSpeedButton
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Left = 411
+        Height = 34
+        Width = 10
+      end
+      inherited cbAutoHide: TCheckBox
+        AnchorSideTop.Control = ArrayNavigationBar1
+        AnchorSideBottom.Control = ArrayNavigationBar1
+        Left = 427
+        Height = 36
+        Width = 102
+      end
+    end
+    object tbDivArray: TToolButton
+      Left = 530
+      Height = 22
+      Top = 24
+      Caption = 'tbDivArray'
+      Style = tbsDivider
+    end
+    object BtnAddWatch: TToolButton
+      Left = 535
+      Top = 24
+      Caption = 'Add Watch'
+      OnClick = BtnAddWatchClick
+    end
+    object BtnInspect: TToolButton
+      Left = 678
+      Top = 24
+      Caption = 'Inspect'
+      OnClick = BtnInspectClick
+    end
+    object BtnEvaluate: TToolButton
+      Left = 613
+      Top = 24
+      Caption = 'Evaluate'
+      OnClick = BtnEvaluateClick
+    end
+    object tbDivAdd: TToolButton
+      Left = 733
+      Height = 22
+      Top = 24
+      Caption = 'tbDivAdd'
+      Style = tbsDivider
+    end
+    object btnEvalHistory: TToolButton
+      Left = 738
+      Top = 24
+      Caption = 'History'
+      DropdownMenu = mnuHistory
+      Style = tbsButtonDrop
+    end
+    object btnDisplayFormat: TToolButton
+      Left = 484
+      Top = 2
+      AllowAllUp = True
+      Caption = 'df'
+      DropdownMenu = mnuWatchFormatPresets
+      ParentShowHint = False
+      ShowHint = True
+      Visible = False
+      OnClick = btnDisplayFormatClick
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 38
+    Top = 0
+    Width = 1040
+    Align = alTop
+    AutoSize = True
+    Caption = 'Panel1'
+    ClientHeight = 38
+    ClientWidth = 1040
+    TabOrder = 0
+    object EdInspect: TComboBox
+      Left = 1
+      Height = 36
+      Top = 1
+      Width = 1018
+      Align = alClient
+      ItemHeight = 0
+      TabOrder = 0
+      TextHint = 'Enter Expression'
+      OnChange = EdInspectChange
+      OnEditingDone = EdInspectEditingDone
+      OnKeyDown = EdInspectKeyDown
+    end
+    object BtnExecute: TSpeedButton
+      Left = 1019
+      Height = 36
+      Top = 1
+      Width = 20
+      Align = alRight
+      Caption = '='
+      OnClick = BtnExecuteClick
+    end
+  end
+  object mnuHistory: TPopupMenu
+    Left = 784
+    Top = 56
+    object MenuItem1: TMenuItem
+      Caption = 'None'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Up'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Down'
+      OnClick = MenuItem1Click
+    end
+  end
+  object popConverter: TPopupMenu
+    Left = 204
+    Top = 56
+  end
+  object popValFormatter: TPopupMenu
+    Left = 280
+    Top = 56
+  end
+  object mnuWatchFormatPresets: TPopupMenu
+    Left = 496
+    Top = 80
+  end
+end

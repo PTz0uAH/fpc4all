@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ideconfstrconsts.liscomponentnameisapascalkeyword
+#, object-pascal-format
+msgid "Component name \"%s\" is a Pascal keyword."
+msgstr "Nome componente \"%s\" é uma palavra-chave Pascal."
+
+#: ideconfstrconsts.liscomponentnameisnotavalididentifier
+#, object-pascal-format
+msgid "Component name \"%s\" is not a valid identifier"
+msgstr "Nome de componente \"%s\" não é um identificador válido"
+
+#: ideconfstrconsts.lisedtdefallpackages
+msgid "All packages"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsallprojects
+msgid "All projects"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetodelphi
+msgid "set FPC mode to DELPHI"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetofpc
+msgid "set FPC mode to FPC"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetogpc
+msgid "set FPC mode to GPC"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetomacpas
+msgid "set FPC mode to MacPas"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetfpcmodetotp
+msgid "set FPC mode to TP"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetiocheckson
+msgid "set IOCHECKS on"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetoverflowcheckson
+msgid "set OVERFLOWCHECKS on"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefsetrangecheckson
+msgid "set RANGECHECKS on"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefuseheaptrcunit
+msgid "use HeapTrc unit"
+msgstr ""
+
+#: ideconfstrconsts.lisedtdefuselineinfounit
+msgid "use LineInfo unit"
+msgstr ""
+
+#: ideconfstrconsts.lisendlessloopinmacros
+msgid "Endless loop in macros"
+msgstr ""
+
+#: ideconfstrconsts.lisfppkgcompilernotexecutable
+#, object-pascal-format
+msgid "The compiler [%s] configured for Fppkg is not an executable."
+msgstr ""
+
+#: ideconfstrconsts.lisfppkgcompilernotexists
+#, object-pascal-format
+msgid "The compiler [%s] configured for Fppkg does not exist."
+msgstr ""
+
+#: ideconfstrconsts.lisfppkgcompilernotfound
+#, object-pascal-format
+msgid "Could not find the compiler [%s] configured for Fppkg."
+msgstr ""
+
+#: ideconfstrconsts.lisfppkgrtlnotfound
+msgid "Fppkg reports that the RTL is not installed."
+msgstr ""
+
+#: ideconfstrconsts.listmfunctionappendpathdelimiter
+msgid "Function: append path delimiter"
+msgstr "Função: adicionar o delimitador de caminho"
+
+#: ideconfstrconsts.listmfunctionchomppathdelimiter
+msgid "Function: remove trailing path delimiter"
+msgstr "Função: retirar o delimitador de caminho do final"
+
+#: ideconfstrconsts.listmfunctionenclosebrackets
+msgid "Function: enclose in ()"
+msgstr ""
+
+#: ideconfstrconsts.listmfunctionextractfileextension
+msgid "Function: extract file extension"
+msgstr "Função: extrair extensão do arquivo"
+
+#: ideconfstrconsts.listmfunctionextractfilenameextension
+msgid "Function: extract file name+extension"
+msgstr "Função: extrair nome+extensão do arquivo"
+
+#: ideconfstrconsts.listmfunctionextractfilenameonly
+msgid "Function: extract file name only"
+msgstr "Função: extrair apenas nome do arquivo"
+
+#: ideconfstrconsts.listmfunctionextractfilepath
+msgid "Function: extract file path"
+msgstr "Função: extrair caminho do arquivo"
+
+#: ideconfstrconsts.listmunknownmacro
+#, object-pascal-format
+msgid "(unknown macro: %s)"
+msgstr "(macro desconhecida: %s)"
+
