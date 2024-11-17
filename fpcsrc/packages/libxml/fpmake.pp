@@ -18,7 +18,7 @@ begin
     P.Directory:=ADirectory;
 {$endif ALLPACKAGES}
     P.Version:='3.3.1';
-    P.OSes := [freebsd,linux,win32];
+    P.OSes := [android,freebsd,linux,win32];
     P.SourcePath.Add('src');
     P.IncludePath.Add('src');
     P.Dependencies.Add('rtl-objpas');
