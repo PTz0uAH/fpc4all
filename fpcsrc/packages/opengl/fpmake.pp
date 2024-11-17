@@ -18,11 +18,11 @@ begin
     P.Directory:=ADirectory;
 {$endif ALLPACKAGES}
     P.Version:='3.3.1';
-    P.OSes:=AllUnixOSes+[Win32,Win64]+[MorphOS]-[Android];
+    P.OSes:=AllUnixOSes+[Win32,Win64]+[MorphOS]+[Android];
 
     P.Dependencies.Add('x11',AllUnixOSes-[darwin,iphonesim,ios]);
     if Defaults.CPU<>arm then
-      P.Dependencies.Add('x11',[darwin]);
+      P.Dependencies.Add('x11',[darwin,android]);
     P.Dependencies.Add('morphunits',[morphos]);
 
     P.SourcePath.Add('src');
@@ -36,7 +36,7 @@ begin
     // T.Dependencies.Add('freeglut',AllOSes-[morphos]);
     T:=P.Targets.AddUnit('glx.pp',AllUnixOSes-[darwin,iphonesim,ios]);
     if Defaults.CPU<>arm then
-      T:=P.Targets.AddUnit('glx.pp',[darwin]);
+      T:=P.Targets.AddUnit('glx.pp',[darwin,android]);
 
     P.ExamplePath.Add('examples');
     P.Targets.AddExampleProgram('radblur.pp');
