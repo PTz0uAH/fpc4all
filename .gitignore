@@ -123,3 +123,8 @@ fpcsrc/compiler/utils/ppudump
 fpcsrc/compiler/utils/ppufiles
 fpcsrc/compiler/utils/ppumove
 fpcsrc/rtl/Package.fpc
+fpcsrc/compiler/ppc1
+fpcsrc/compiler/ppc2
+fpcsrc/compiler/ppc3
+fpcsrc/compiler/ppca64
+fpcsrc/compiler/ppcwpo1

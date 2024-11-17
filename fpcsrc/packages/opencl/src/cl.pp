@@ -55,7 +55,7 @@ const
   OpenCLlib = 'OpenCL.dll';
   {$DEFINE extdecl := stdcall}
 {$ELSE}
-  {$IFDEF LINUX}
+  {$IFDEF ANDROID}
   {$DEFINE DYNLINK}
 const
   OpenCLlib = 'libOpenCL.so';
