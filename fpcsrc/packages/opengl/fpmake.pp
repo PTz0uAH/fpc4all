@@ -22,7 +22,7 @@ begin
 
     P.Dependencies.Add('x11',AllUnixOSes-[darwin,iphonesim,ios]);
     if Defaults.CPU<>arm then
-      P.Dependencies.Add('x11',[darwin,android]);
+      P.Dependencies.Add('x11',[darwin]);
     P.Dependencies.Add('morphunits',[morphos]);
 
     P.SourcePath.Add('src');
@@ -36,7 +36,7 @@ begin
     // T.Dependencies.Add('freeglut',AllOSes-[morphos]);
     T:=P.Targets.AddUnit('glx.pp',AllUnixOSes-[darwin,iphonesim,ios]);
     if Defaults.CPU<>arm then
-      T:=P.Targets.AddUnit('glx.pp',[darwin,android]);
+      T:=P.Targets.AddUnit('glx.pp',[darwin]);
 
     P.ExamplePath.Add('examples');
     P.Targets.AddExampleProgram('radblur.pp');
