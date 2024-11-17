@@ -1703,7 +1703,7 @@ end;
     Application config files
   ---------------------------------------------------------------------}
 
-{$ifdef android}
+{$ifdef androidXYZ} //for Termux we need the default handling
 
 var
   _HomeDir: string;
@@ -1748,7 +1748,7 @@ begin
   Result:=GetHomeDir;
 end;
 
-{$else}
+{$else} //Termux needs this one
 
 Function GetHomeDir : String;
 begin
@@ -1769,7 +1769,7 @@ begin
     Result:=IncludeTrailingPathDelimiter(Result);
 end;
 
-{$endif android}
+{$endif androidXYZ}
 
 Function GetAppConfigDir(Global : Boolean) : String;
 
@@ -1778,10 +1778,10 @@ begin
     Result:=IncludeTrailingPathDelimiter(SysConfigDir)
   else
     Result:=IncludeTrailingPathDelimiter(XdgConfigHome);
-{$ifdef android}
+{$ifdef androidXYZ}
   if _HasPackageDataDir then
     exit;
-{$endif android}
+{$endif androidXYZ}
   if VendorName<>'' then
     Result:=IncludeTrailingPathDelimiter(Result+VendorName);
   Result:=IncludeTrailingPathDelimiter(Result+ApplicationName);
@@ -1794,13 +1794,13 @@ begin
     Result:=IncludeTrailingPathDelimiter(SysConfigDir)
   else
     Result:=IncludeTrailingPathDelimiter(XdgConfigHome);
-{$ifdef android}
+{$ifdef androidXYZ}
   if _HasPackageDataDir then
     begin
       Result:=Result+'config'+ConfigExtension;
       exit;
     end;
-{$endif android}
+{$endif androidXYZ}
   if SubDir then
     begin
       if VendorName<>'' then
@@ -1823,7 +1823,7 @@ begin
     Result:=OnGetTempDir(Global)
   else
     begin
-{$ifdef android}
+{$ifdef androidXYZ}
       Result:=GetHomeDir + 'tmp';
       ForceDirectories(Result);
 {$else}
@@ -1834,7 +1834,7 @@ begin
         Result:=GetEnvironmentVariable('TMPDIR');
       if (Result='') then
         Result:='/tmp/'; // fallback.
-{$endif android}
+{$endif androidXYZ}
     end;
   if (Result<>'') then
     Result:=IncludeTrailingPathDelimiter(Result);
@@ -1852,11 +1852,11 @@ Function GetUserDir : String;
 begin
   If (TheUserDir='') then
     begin
-{$ifdef android}
+{$ifdef androidXYZ}
     TheUserDir:=GetHomeDir;
 {$else}
     TheUserDir:=GetEnvironmentVariable('HOME');
-{$endif android}
+{$endif androidXYZ}
     if (TheUserDir<>'') then
       TheUserDir:=IncludeTrailingPathDelimiter(TheUserDir)
     else
