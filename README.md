@@ -1,24 +1,27 @@
 "A road-trip alike journey to build our favorite set of oldskool-craftsmen-dev-tools with our bare hands"
 
  FPC4ALL is an experimental repo to define the FPC4TERMUX blueprint (next-door-repo), meant
- for circular learning.. enhancing self-sustainability.. even on a non-high-end android device..
+ for circular learning.. thus enhancing self-sustainability.. even on a non-high-end android device..
  Our repo contains combined trunk snapshots of FPC(rev.7ac4e38b) and LAZARUS(rev.aeca9749)..
  On Termux we are going to create a script to build fpc and our own lazarus IDE.. and while
  editing, also make use of conditional define TMX to isolate our code from the rest..
  
- Eventually we are also going to utilize on-device FPCUPDELUXE to make the process less elaborate..
- Once we have buildable sources we can simply add our tmx-trunk to the list of sources and
- FPCUPDELUXE will perform the delicate build procedure..
+ Naturally we are also going to utilize on-device FPCUPDELUXE "termuxified" to make the process less
+ elaborate.. so the Termux user can finally work with a recent developer edition of FPC and Lazarus.
+ The aarch64-android bootstrap compiler we borrowed from the fpc-3.2.2.aarch64-termux.deb experiment
+ is stable enough to become the build engine of our project.
+ Once we have patched/buildable sources we can simply add our tmx-trunk to the list of sources on the
+ "and more.."-tab and FPCUPDELUXE will perform the delicate build procedure as usual..
  
- Furthermore since all commits are back-trackable the fpc-upstream devs can implement the changes
+ Nothing is lost.. since all commits are back-trackable the fpc-upstream devs can implement the changes
  into their mainstream git if needed. Overhere we are pioneering and use unorthodox methods to present
- a workable version to the somewhat more demanding devs.. as soon as possible.. which means
- utilizing gtk2,x11,opengl,etc.. all neat stuff that would take ages to prep via the official repos.
- 
+ a workable version to the somewhat more demanding devs and Termux users.. which means utilizing
+ gtk2,x11,opengl,opengles,sdl etc.. mostly neat stuff that would take ages to prep via the official repos.
+  
  As "spoiled" Delphi7-pro user I observed the past decades of FreePascal development with
  anticipation and patience, always comparing my "paid" version with the "free" surrogate, and
- now, as the modern Lazarus seems to be on par with Delphi6 with a lot the extras also to be seen
- at modern Delphi releases, we are going to bring that developer environment to Termux including
+ now, as the modern Lazarus IDE seems to be on par with Delphi7 IDE with a lot the extras also to be
+ seen at modern Delphi releases, we are going to bring that developer environment to Termux including
  all kinds of non-standard features activated to create desktop apps and more cool stuff..
 
  Last but not least, for now, is my secondary motive to create with fpc a classic Amiga toolchain-
