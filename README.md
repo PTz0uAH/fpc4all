@@ -19,7 +19,7 @@
  
  Nothing is lost.. since all commits are back-trackable the fpc-upstream devs can implement the changes
  into their mainstream git if needed. Overhere we are pioneering and use unorthodox methods to present
- a workable version for pioneering.. which means utilizing neat stuff that would "normally" take ages
+ a workable version for experimentation.. which means utilizing neat stuff that would "normally" take ages
  to prep via the official repos..
   
  As "spoiled" Delphi7-pro user I observed the past decades of FreePascal development with
