@@ -1,4 +1,4 @@
-"A road-trip alike journey to build our favorite set of oldskool-craftsmen-dev-tools with our bare hands"
+"Indeed it was a road-trip alike journey to build our favorite set of oldskool-craftsmen-dev-tools with our bare hands"
 
  FPC4ALL is an experimental repo to define the FPC4TERMUX blueprint (next-door-repo), meant
  for circular learning.. thus enhancing self-sustainability.. even on a non-high-end android device..
