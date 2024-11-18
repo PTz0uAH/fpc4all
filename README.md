@@ -19,8 +19,8 @@
  
  Nothing is lost.. since all commits are back-trackable the fpc-upstream devs can implement the changes
  into their mainstream git if needed. Overhere we are pioneering and use unorthodox methods to present
- a workable version to the somewhat more demanding devs and Termux users.. which means utilizing
- gtk2,x11,opengl,opengles,sdl etc.. mostly neat stuff that would take ages to prep via the official repos..
+ a workable version to the somewhat more advanced devs and Termux users.. which means utilizing neat
+ stuff that would "normally" take ages to prep via the official repos..
   
  As "spoiled" Delphi7-pro user I observed the past decades of FreePascal development with
  anticipation and patience, always comparing my "paid" version with the "free" surrogate, and
@@ -36,11 +36,11 @@
  run inside the "termuxified" emulators Amiberry, Fs-uae and even on vAmigaWeb and Uae4arm-apk..
  The latter 2 do not need Termux X11 apk to run and can be called from the plain Termux-app. 
 
-"Hope to surprise you soon with the results of an extra-ordinary educational endeavor.."
+"Hope you'll be surprised with the results of this extra-ordinary educational endeavor.."
 
 With kind regards,
 
-PTz0uAH
+PTz(Peter Slootbeek)uAH
 
 ergo: getting the Castle Game Engine to work was my main drive.. that was a success so
 now the experience is used to work more complient at porting from scratch for the better,
