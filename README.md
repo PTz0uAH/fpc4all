@@ -42,8 +42,12 @@ With kind regards,
 
 PTz(Peter Slootbeek)uAH
 
-ergo: getting the Castle Game Engine to work was my main drive.. that was a success so
-now the experience is used to work more complient at porting from scratch for the better,
-we shall see.. and one thing is for sure.. once build, lazarus and fpc keep working even
-if no internet is available what makes them also perfect tools for any offline scenario..
+p.s. during development there is limited support as this is an experiment, please only post bugs at issues..
+nevertheless you are very welcome to post your screenshot at [issues](https://github.com/PTz0uAH/fpc4all/issues/1)
+if you managed to get it working.. and maybe show off your very first project.. we're sincerely proud of you!
+
+ergo: getting the Castle Game Engine to work was my main drive.. that was a success in early alpha phase so
+now the experience is used to work more complient at porting from scratch for the better, we shall see..
+though one thing is for sure.. once build, lazarus and fpc keep working even if no internet is available 
+what makes our "dynamic duo" also perfect tools for any offline scenario..
 
