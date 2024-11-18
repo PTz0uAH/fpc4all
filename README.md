@@ -15,12 +15,12 @@
 
  To make it a true ootb-(my "middlename")-experience, for your convenience, the "termuxified"
  FPCUPDELUXE binary will be available in this repo to get you started right away..
- Final target is to let the user build this legendary dev-environment with only 2 clicks..
+ Any Termux-app/X11 user now can build "on the fly" a functional FPC and LAZARUS..
  
  Nothing is lost.. since all commits are back-trackable the fpc-upstream devs can implement the changes
  into their mainstream git if needed. Overhere we are pioneering and use unorthodox methods to present
- a workable version to the somewhat more advanced devs and Termux users.. which means utilizing neat
- stuff that would "normally" take ages to prep via the official repos..
+ a workable version for pioneering.. which means utilizing neat stuff that would "normally" take ages
+ to prep via the official repos..
   
  As "spoiled" Delphi7-pro user I observed the past decades of FreePascal development with
  anticipation and patience, always comparing my "paid" version with the "free" surrogate, and
