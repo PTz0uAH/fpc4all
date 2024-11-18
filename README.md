@@ -32,8 +32,8 @@
  compatible crosscompiler, the "V3"-binutils are already available via a "termuxified" Amiga-gcc
  toolchain available from the earlier experiments and should work with fpc4all and fpc4termux..
  This means we are also building an alternative developer platform to create programs with fpc
- and lazarus for the good ole Commodore Amiga.. to run on real amiga machines but primarely to
- run inside the "termuxified" emulators Amiberry, Fs-uae and even on vAmigaWeb and Uae4arm-apk..
+ and lazarus for the good ole Commodore Amiga.. and even to run on real amiga machines though most
+ likely to run inside "termuxified" emulators Amiberry, Fs-uae and even on vAmigaWeb and Uae4arm-apk..
  The latter 2 do not need Termux X11 apk to run and can be called from the plain Termux-app. 
 
 "Hope you'll be surprised with the results of this extra-ordinary educational endeavor.."
