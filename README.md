@@ -44,7 +44,7 @@ PTz(Peter Slootbeek)uAH
 
 p.s. during development there is limited support as this is an experiment, please only post bugs at issues..
 nevertheless you are very welcome to post your screenshot at [issues](https://github.com/PTz0uAH/fpc4all/issues/1)
-if you managed to get it working.. and maybe show off your very first project.. we're sincerely proud of you!
+if you managed to get it working.. and maybe show off your very first project.. we're already sincerely proud of you!
 
 ergo: getting the Castle Game Engine to work was my main drive.. that was a success in early alpha phase so
 now the experience is used to work more complient at porting from scratch for the better, we shall see..
