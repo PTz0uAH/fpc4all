@@ -1,10 +1,11 @@
 "Indeed it was a road-trip alike journey to build our favorite set of oldskool-craftsmen-dev-tools with our bare hands"
 
- FPC4ALL is an experimental repo to define the FPC4TERMUX blueprint (next-door-repo), meant
+ FPC4ALL (AARCH64) is an experimental repo to define the FPC4TERMUX blueprint (next-door-repo), meant
  for circular learning.. thus enhancing self-sustainability.. even on a non-high-end android device..
  Our repo contains combined trunk snapshots of FPC(rev.7ac4e38b) and LAZARUS(rev.aeca9749)..
  On Termux we are going to work the code to build FPC and our very own Lazarus IDE.. and while
- editing, use conditional define TMX to isolate our code from the rest..
+ editing the sources, try to make use of conditional define TMX to isolate our code from the rest..
+ (a simple "make -DTMX" would set the define i.e. if mainstream would implement our "cherries")
  
  Naturally we are also going to utilize on-device FPCUPDELUXE "termuxified" to make the process less
  elaborate.. so the Termux user can finally work with a recent developer edition of FPC and Lazarus.
@@ -37,6 +38,8 @@
  The latter 2 do not need Termux X11 apk to run and can be called from the plain Termux-app. 
 
 "Hope you'll be surprised with the results of this extra-ordinary educational endeavor.."
+
+Thankslist: WIP
 
 With kind regards,
 
