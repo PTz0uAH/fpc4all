@@ -39,7 +39,7 @@
 
 "Hope you'll be surprised with the results of this extra-ordinary educational endeavor.."
 
-Thankslist: WIP
+Thanks all who made this possible!
 
 With kind regards,
 
