@@ -4,10 +4,10 @@ Quick build instructions for Termux-app/X11/XFCE4: (assuming all libs needed are
 - make sure LD_LIBRARY_PATH exists and points to /data/data/com.termux/files/usr/lib
 - if LD_LIBRARY_PATH does not exist add it to .bashrc for permanent usage or..
 - type export LD_LIBRARY_PATH=$PREFIX/lib before continuing or..
-- make use of my run.sh script and make a link: ln -s $PREFIX/lib/fpc4all/run.sh $PREFIX/bin/run  
 - cd $PREFIX/lib
 - clone this repo (via ssh works best) 
 - cd fpc4all/fpcupdeluxe
+- make use of my run.sh script and make a link: ln -s $PREFIX/lib/fpc4all/run.sh $PREFIX/bin/run  
 - run fpcupdeluxe-aarch64-android
 - create FPC
 - create LAZARUS
