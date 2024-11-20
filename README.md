@@ -1,5 +1,21 @@
 "Indeed it was a road-trip alike journey to build our favorite set of oldskool-craftsmen-dev-tools with our bare hands"
 
+Quick build instructions for Termux-app/X11/XFCE4: (assuming all libs needed are installed)
+- make sure LD_LIBRARY_PATH exists and points to /data/data/com.termux/files/usr/lib
+- if LD_LIBRARY_PATH does not exist add it to .bashrc for permanent usage or..
+- type export LD_LIBRARY_PATH=$PREFIX/lib before continuing or..
+- make use of my run.sh script and make a link: ln -s $PREFIX/lib/fpc4all/run.sh $PREFIX/bin/run  
+- cd $PREFIX/lib
+- clone this repo (via ssh works best) 
+- cd fpc4all/fpcupdeluxe
+- run fpcupdeluxe-aarch64-android
+- create FPC
+- create LAZARUS
+- read the final instructions displayed at a successfull build
+- if the desktop icon of lazarus is not working use workaround with a a new launcher-link with path to the lazarus.sh script
+- as soon as FPCUPDELUXE "termuxified" is adapted previous steps will not be needed anymore..
+- have fun..
+
  FPC4ALL (AARCH64) is an experimental repo to define the FPC4TERMUX blueprint (next-door-repo), meant
  for circular learning.. thus enhancing self-sustainability.. even on a non-high-end android device..
  Our repo contains combined trunk snapshots of FPC(rev.7ac4e38b) and LAZARUS(rev.aeca9749)..
